@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="images/solved.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<title>Rubik's Cube CFOP Method</title>
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.height = scrolled + "%";
+	}
+    </script>
+</head>
+
+<body>	
+<div class="navbar">  <!--All of this is a navbar that is <5% of the screen-->
+  <a href="index.html" class="navbarlink">Home</a>
+  <div class="dropdown">
+    <button class="dropbutton"><a href="method1.html">Beginner's Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method1-1.html">White Cross</a>
+      <a href="method1-2.html">First Layer</a>
+      <a href="method1-3.html">Second Layer</a>
+      <a href="method1-4.html">Yellow Cross (2-look OLL)</a>
+      <a href="method1-5.html">Yellow Corners (2-look OLL)</a>
+      <a href="method1-6.html">Permute Corners (2-look PLL)</a>
+      <a href="method1-7.html">Permute Sides (2-look PLL)</a>              
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbutton" id="active"><a href="method2.html">CFOP Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method2-1.html">Cross</a>
+      <a href="method2-2.html">First 2 Layers (F2L)</a>
+      <a href="method2-3.html">Orient Last Layer (OLL)</a>
+      <a href="method2-4.html">Permute Last Layer (PLL)</a>
+    </div>
+  </div>
+     <a href="notation.html" class="navbarlink">Notation</a>
+</div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+<!-- PAGE CONTENT STARTS HERE -->
+
+<h1 id="firstelement">How to Solve the Rubik's Cube/CFOP Method</h1>
+<hr>
+<h2>Introduction</h2>	
+<p>This is a guide to learning how to use the pure Fridrich/CFOP method (Cross, F2L, OLL, PLL) to solve the 3x3 Rubik's cube, this means that there will be no shortcuts or tricks to make the method easier while slowing down solve speed. </p>
+<p>The CFOP or Fridrich method is the most commonly used method to solve the cube, likely due to it being very simliar to the beginner's method.
+While the CFOP method is less intuitive, this can be an advantage for beginners, as the method mostly relies on the solver's muscle memory instead of making desisions mid-solve.</p>
+<p> The CFOP/Fridrich method consists of only 4 steps, and is therefore able to be completed by checking the position of the pieces around 4-6 times, depending on how good the solver is at looking ahead. 
+This is the main reason that the CFOP method can take the least amount of solve time, while having a higher average move count than other methods, (the Roux and ZZ methods).
+The cube is commonly solved with the white side on top for the cross, yellow on the bottom for the cross, so this guide will assume this colour orientation of the cube. However, this is not required.</p>
+<p>This method of solving has the advantages of being statistically the fastest method to solve a Rubik's cube, due to a combination of high popularity-leading to many optimizations, and has the most ergonomic moves-relying on wrist movements more than finger movements.
+While this method has more steps than other commonly used methods, and require a lot of memorization, this can allow people who are not familliar with a Rubik's cube to pick up this method easier.</p>
+<p>It is recommended to first learn the <a href="method1.html">beginner's method</a> first, as this guide will build on steps and terminology covered in the beginner's method. The CFOP/Fridrich method is best suited for people after they have become proficient at the beginner's method (usually when you can get 30 second solves).</p>
+<hr>
+<h2 style="margin-bottom:50px;">Steps:</h2>
+<div class="btn-group">
+  <button onclick="window.location.href='method2-1.html'" >Cross</button> <!-- These buttons use javascript, because I don't want to put links inside of them-->
+  <button onclick="window.location.href='method2-2.html'">First two layers</button>
+  <button onclick="window.location.href='method2-3.html'">Orient Last Layer</button>
+  <button onclick="window.location.href='method2-4.html'">Permute Last Layer</button>
+</div>
+
+<div class="btn-group">
+  <img src="images/cfopcross.png" alt="image of finished white cross" class="buttonimages">
+  <img src="images/first_2_layers.png" alt="image of finished F2L" class="buttonimages">
+  <img src="images/oll.png" alt="image of finished OLL" class="buttonimages">
+  <img src="images/solved.png" alt="image of solved cube" class="buttonimages">
+</div> 
+ <hr style="margin-top: 25px;">
+ <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
+ I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+
+</body>	
+
+</html>

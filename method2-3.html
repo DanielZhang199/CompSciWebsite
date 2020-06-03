@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="images/solved.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<title>Rubik's Cube CFOP Method</title>
+	
+    <script>
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.height = scrolled + "%";
+	}
+    </script>
+    
+</head>
+
+<body>	
+<div class="navbar">  <!--All of this is a navbar that is <5% of the screen-->
+  <a href="index.html" class="navbarlink">Home</a>
+  <div class="dropdown">
+    <button class="dropbutton"><a href="method1.html">Beginner's Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method1-1.html">White Cross</a>
+      <a href="method1-2.html">First Layer</a>
+      <a href="method1-3.html">Second Layer</a>
+      <a href="method1-4.html">Yellow Cross (2-look OLL)</a>
+      <a href="method1-5.html">Yellow Corners (2-look OLL)</a>
+      <a href="method1-6.html">Permute Corners (2-look PLL)</a>
+      <a href="method1-7.html">Permute Sides (2-look PLL)</a>             
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbutton" id="active"><a href="method2.html">CFOP Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method2-1.html">Cross</a>
+      <a href="method2-2.html">First 2 Layers (F2L)</a>
+      <a href="method2-3.html" id="activedrop">Orient Last Layer (OLL)</a>
+      <a href="method2-4.html">Permute Last Layer (PLL)</a>
+    </div> 
+  </div>
+  <a href="notation.html" class="navbarlink">Notation</a>
+</div>
+  
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+</div>
+
+<!-- PAGE CONTENT STARTS HERE -->
+<h1 id="firstelement">CFOP Method-Step 3: Orient Last Layer (OLL)</h1> 
+<hr>
+<img src="images/oll.png" alt="image of finished OLL" class="smallimages">
+<p>The third step of the CFOP/Fridrich method is to orient the last layer (OLL).
+OLL solves the top face in 1 step, with 57 algorithms.</p>
+<p>You should already know around 10 OLL algorithms, and a large chunk of the remaining cases can just be mirrored from other cases.
+Most algorithms are made from a combination of short sequences of moves called "triggers" (the parts in brackets), which make the algorithm easier to memorize.
+There is also a more advanced version of OLL in which you can simplify PLL if the top cross is made (COLL). However, COLL is beyond the scope of this guide. </p>
+<p>Those who are unable to memorize this step can instead use <a href='method1-4.html'>2-Look OLL</a> from the beginner's method instead breaks the step down to 9 cases and sometimes even less, at the cost of a few seconds of solve time.
+I recommend learning full PLL before this step if you are already able to do 2-look OLL.</p>
+<p>As OLL has way too many possible algorithms for each case to cover, this gudide will only display one algorithm for each case; remember that there are many more algorithms that you can use for a perticular case that you can find on the internet.</p>
+<p>OLL algorithms focus on only the top side colour orientation, in this case yellow; all the other colours are unimportant (white).
+After completing F2L, the cube will always fit in one of the following 57 cases given the cube is held with yellow side up, which are grouped by shape:</p>
+<hr>
+<h2>1: Edges flipped correctly (Cross shape):</h2>
+<p>This is also the second part of 2-Look OLL in the <a href="method1.html">beginner's method:</a></p>
+  <div class="centered"> <!-- I still can't believe the quantity of images that I made-->
+	<p><img src="images/oll_cross/case1.png" alt="case 1" class="caseimages" align="center" id="firstcaseimage"> R U2 (R2 U' R2 U' R2) U2 R
+	<img src="images/oll_cross/case2.png" alt="case 2" class="caseimages" align="center"> F (R U R' U') (R U R' U') (R U R' U') F'
+	<img src="images/oll_cross/case3.png" alt="case 3" class="caseimages" align="center"> (R U2 R' U') (R U' R')
+	<img src="images/oll_cross/case4.png" alt="case 4" class="caseimages" align="center"> (R U R' U) (R U2 R')</p>
+ </div>
+ <div class="centered">
+	<p><img src="images/oll_cross/case5.png" alt="case 5" class="caseimages" align="center" id="firstcaseimage">(r U R' U') (r' F R F')
+	<img src="images/oll_cross/case6.png" alt="case 6" class="caseimages" align="center"> R2 D (R' U2 R) D' (R' U2 R')
+	<img src="images/oll_cross/case7.png" alt="case 7" class="caseimages" align="center"> (F R' F' r) (U R U' r')</p>
+ </div>
+<h2>2: No edges flipped correctly:</h2>
+  <div class="centered">
+	<p><img src="images/oll_noedges/case1.png" alt="case 8" class="caseimages" align="center" id="firstcaseimage"> (R U2) (R2' F R F' U2') (R' F R F')
+	<img src="images/oll_noedges/case2.png" alt="case 9" class="caseimages" align="center"> F (R U R' U') F' f (R U R' U') f'
+	<img src="images/oll_noedges/case3.png" alt="case 10" class="caseimages" align="center"> (y) f (R U R' U') f' U' F (R U R' U') F'
+	<img src="images/oll_noedges/case4.png" alt="case 11" class="caseimages" align="center"> f (R U R' U') f' U F (R U R' U') F'</p>
+ </div>
+ <div class="centered">
+	<p><img src="images/oll_noedges/case5.png" alt="case 12" class="caseimages" align="center" id="firstcaseimage"> R U R' U (R' F R F') U2 (R' F R F')	
+	<img src="images/oll_noedges/case6.png" alt="case 13" class="caseimages" align="center"> (y') r U R' U R U2 r2' U' R U' R' U2 r	
+	<img src="images/oll_noedges/case7.png" alt="case 14" class="caseimages" align="center">r' R U R U R' U' r R2' F R F'</p>
+ </div>
+<h2>3: P/b-shapes:</h2>
+  <div class="centered">
+	<p><img src="images/oll_pshape/case1.png" alt="case 15" class="caseimages" align="center" id="firstcaseimage"> (y2) R' U' F U R U' R' F' R
+	<img src="images/oll_pshape/case2.png" alt="case 16" class="caseimages" align="center"> R U B' U' R' U R B R'
+	<img src="images/oll_pshape/case3.png" alt="case 17" class="caseimages" align="center"> (y) R' U' F' U F R
+	<img src="images/oll_pshape/case4.png" alt="case 18" class="caseimages" align="center"> f (R U R' U') f'</p>
+ </div>
+<h2>4: W-shapes: </h2>
+  <div class="centered">
+	<p><img src="images/oll_wshape/case1.png" alt="case 19" class="caseimages" align="center" id="firstcaseimage"> R' U' R U' R' U R U R y R' F' R
+	<img src="images/oll_wshape/case2.png" alt="case 20" class="caseimages" align="center"> (y2) (R U R' U) (R U' R' U') (R' F R F')	
+	<img src="images/oll_wshape/case3.png" alt="case 21" class="caseimages" align="center"> (R U R' U') x D' R' U R E' z'
+	<img src="images/oll_wshape/case4.png" alt="case 22" class="caseimages" align="center"> R' U' R' F R F' U R</p>
+ </div>
+<h2>5: L-shapes: </h2>
+  <div class="centered">
+	<p><img src="images/oll_lshape/case1.png" alt="case 23" class="caseimages" align="center" id="firstcaseimage"> F (R U R' U') (R U R' U') F'
+	<img src="images/oll_lshape/case2.png" alt="case 24" class="caseimages" align="center"> F' (L' U' L U) (L' U' L U) F
+	<img src="images/oll_lshape/case3.png" alt="case 25" class="caseimages" align="center"> l' U' L U' L' U L U' L' U2 l
+	<img src="images/oll_lshape/case4.png" alt="case 26" class="caseimages" align="center"> r U R' U R U' R' U R U2 r'</p>
+ </div>
+  <div class="centered">
+	<p><img src="images/oll_lshape/case5.png" alt="case 27" class="caseimages" align="center" id="firstcaseimage"> R B' R2 F R2 B R2 F' R
+	<img src="images/oll_lshape/case6.png" alt="case 28" class="caseimages" align="center"> (y2) R' F R2 B' R2 F' R2 B R'
+	<img src="images/oll_lshape/case7.png" alt="case 29" class="caseimages" align="center">F U R U' R2 F' R U R U' R'</p>
+ </div>
+  <div class="centered">
+	<p><img src="images/oll_lshape/case8.png" alt="case 30" class="caseimages" align="center" id="firstcaseimage"> R' F R U R' F' R y' R U' R'	
+	<img src="images/oll_lshape/case9.png" alt="case 31" class="caseimages" align="center"> (y2) l' U' l (L' U' L U) l' U l
+	<img src="images/oll_lshape/case10.png" alt="case 32" class="caseimages" align="center">(y2) r U r' (R U R' U') r U' r'</p>
+ </div>
+<h2>6: Line shapes: </h2>
+  <div class="centered">
+	<p><img src="images/oll_lineshape/case1.png" alt="case 33" class="caseimages" align="center" id="firstcaseimage"> (R U R' U') (R' F R F')
+	<img src="images/oll_lineshape/case2.png" alt="case 34" class="caseimages" align="center"> F (R U R' U') F'
+	<img src="images/oll_lineshape/case3.png" alt="case 35" class="caseimages" align="center">(y) R' F (R U R U') R2 F' R2 U' R' (U R U R')</p>
+ </div>
+  <div class="centered">
+	<p><img src="images/oll_lineshape/case4.png" alt="case 36" class="caseimages" align="center" id="firstcaseimage">r U r' U R U' R' U R U' R' r U' r'
+	<img src="images/oll_lineshape/case5.png" alt="case 37" class="caseimages" align="center"> 	F U R U' R' U R U' R' F'
+	<img src="images/oll_lineshape/case6.png" alt="case 38" class="caseimages" align="center">	R' U' R U' R' d R' U R B</p>
+ </div>
+<h2>7: Y-Shapes: </h2>
+ <div class="centered">
+	<p><img src="images/oll_yshape/case1.png" alt="case 39" class="caseimages" align="center" id="firstcaseimage"> 	(y') (R U R' U') R' F R2 U R' U' F'
+	<img src="images/oll_yshape/case2.png" alt="case 40" class="caseimages" align="center"> (y') R U R' y R' F R U' R' F' R
+	<img src="images/oll_yshape/case3.png" alt="case 41" class="caseimages" align="center"> R U2 R2' F R F' R U2 R'
+	<img src="images/oll_yshape/case4.png" alt="case 42" class="caseimages" align="center"> (y) F R U' R' U' R U R' F'</p>
+ </div>
+ <div class="centered">
+	<p><img src="images/oll_yshape/case5.png" alt="case 43" class="caseimages" align="center" id="firstcaseimage"> M U (R U R' U') (R' F R F') M'
+	<img src="images/oll_yshape/case6.png" alt="case 44" class="caseimages" align="center"> r' U2 R U R' U r R U2 R' U' R U' R'
+	<img src="images/oll_yshape/case7.png" alt="case 45" class="caseimages" align="center"> R U' R' U2 R U y R U' R' y' U' R'
+	<img src="images/oll_yshape/case8.png" alt="case 46" class="caseimages" align="center"> r' R2 y R U R' U' y' R' U M'</p>
+ </div>
+<h2>8: Square shapes: </h2>
+ <div class="centered">
+	<p><img src="images/oll_square/case1.png" alt="case 47" class="caseimages" align="center" id="firstcaseimage">(r' U2) (R U R' U r)
+	<img src="images/oll_square/case2.png" alt="case 48" class="caseimages" align="center"> (r' U2) (R U R' U r)</p>
+ </div>
+<h2>9: Z-shapes: </h2>
+  <div class="centered">
+	<p><img src="images/oll_zshape/case1.png" alt="case 49" class="caseimages" align="center" id="firstcaseimage"> 	L F' (L' U' L U) F U' L'
+	<img src="images/oll_zshape/case2.png" alt="case 50" class="caseimages" align="center"> R' F (R U R' U') F' U R
+	<img src="images/oll_zshape/case3.png" alt="case 51" class="caseimages" align="center">	r U R' U R U2 r'</p>
+ </div>
+  <div class="centered">
+	<p><img src="images/oll_zshape/case4.png" alt="case 52" class="caseimages" align="center" id="firstcaseimage">l' U' L U' L' U2 l
+	<img src="images/oll_zshape/case5.png" alt="case 53" class="caseimages" align="center">	F' (L' U' L U) F y F (R U R' U') F'
+	<img src="images/oll_zshape/case6.png" alt="case 54" class="caseimages" align="center">	F (R U R' U') F' U F (R U R' U') F'</p>
+ </div>
+<h2>10: 4 corners aligned:</h2>
+<p>For some reason, there are ~20 or so algorithms for each of these cases, but I'll share the ones without slice moves or rotations:</p>
+   <div class="centered">
+	<p><img src="images/oll_4corners/case1.png" alt="case 55" class="caseimages" align="center" id="firstcaseimage">r U R' U' r' R U R U' R'
+	<img src="images/oll_4corners/case2.png" alt="case 56" class="caseimages" align="center"> R U R' U' r R' U R U' r'
+	<img src="images/oll_4corners/case3.png" alt="case 57" class="caseimages" align="center">r' R U R U R' U' r2 R2' U R U' r'</p>
+ </div>
+ 
+<div class="forwardbackbutton">
+<a class="previous" href="method2-2.html" >&laquo; Previous: F2L</a>
+<a class="next" href="method2-4.html">Next Step: PLL &raquo;</a>
+</div>
+<hr>
+ <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
+ I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+
+</body>
+
+</html>

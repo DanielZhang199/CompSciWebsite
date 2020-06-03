@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="images/solved.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<title>Rubik's Cube Beginner's Method Guide</title>
+	
+    <script>
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.height = scrolled + "%";
+	}
+    </script>
+</head>
+
+<body>	
+	
+<div class="navbar">   <!--All of this is a navbar that is <5% of the screen-->
+  <a href="index.html" class="navbarlink">Home</a>
+  <div class="dropdown">
+    <button href="method1.html" class="dropbutton" id="active"><a href="method1.html">Beginner's Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method1-1.html">White Cross</a>
+      <a href="method1-2.html">First Layer</a>
+      <a href="method1-3.html">Second Layer</a>
+      <a href="method1-4.html">Yellow Cross (2-look OLL)</a>
+      <a href="method1-5.html">Yellow Corners (2-look OLL)</a>
+      <a href="method1-6.html" id="activedrop">Permute Corners (2-look PLL)</a>
+      <a href="method1-7.html">Permute Sides (2-look PLL)</a>     
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbutton"><a href="method2.html">CFOP Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method2-1.html">Cross</a>
+      <a href="method2-2.html">First 2 Layers (F2L)</a>
+      <a href="method2-3.html">Orient Last Layer (OLL)</a>
+      <a href="method2-4.html">Permute Last Layer (PLL)</a>
+    </div>
+  </div>
+       <a href="notation.html" class="navbarlink">Notation</a>
+</div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+<!--PAGE CONTENT STARTS HERE-->
+<h1 id="firstelement">Beginner's Method-Step 6: Permute Corners</h1>
+<hr> <!-- Image name is actually PLL1 (one), not PLLL, even if it looks that way -->
+<img src="images/pll1.png" alt="image of finished oll" class="smallimages">
+<p>If you are on this step, you are probably noticing that you are almost done! To finish solving the Last Layer (TM), we just need to move the yellow pieces around,
+until they the colours on the side match up. Which would solve the cube.
+Some people may find PLL to be hard, as it involves comparing multiple colours simliar to when we were solving the second layer,
+but now is a lot less intuitive where each piece is going to go.</p>
+<p>You may be able to solve the first part of PLL by just looking at the 2 algorithms below and figuring it out, but most people have no idea what they are supposed to do on this step.
+The purpose of the first step of 2-look PLL is to move the corners into the right positions.
+Fortunately, there are only 3 possible ways for the yellow corners to be scrambled at this point. 
+2 corners will be diagonally swapped, or vertically/horizontally swapped, or the corners can be solved (In which case your cube would look like the image above).
+You can tell which position your cube is in by looking for the 'headlights', which is when 2 of the same colour point the same way. 
+One pair of headlights is a vertical swap algorithm, two headlights mean that the corners are solved already, and no headlights is a diagonal swap.</p>
+<hr>
+
+<h2>Explaination:</h2>
+<p>The easiest way of doing this step is with only one algorithm. Only learn the 'headlights' (vertical swap) algorithm, and use it regardless of whether or not there are headlights.
+If the corners are solved, don't do anything; if there are 'headlights', move the headlights to point to the left and do the algorithm;
+ if there are no headlights, do the headlights algorithm anyways and that should create a pair of headlights.
+ You move the headlights to the left because they are already solved, and we need to swap the right corners, which is what the headlights algorithm does.</p>
+<p>If you want to use the diagonal swap algorithm to save time, you do not need to align the pieces in a specific way for the algorithm to work, as you can always turn the top layer to align the pieces to their corrosponding side.
+Both corners can swap diagonally with the same results. Note that this isn't true of the 'headlights' case.</p>
+<div class="centered">
+  <img src="images/pll/example_1.png" alt="image of first case" class="exampleimages">
+  <img src="images/pll/example_2.png" alt="image of second case" class="exampleimages">
+  <img src="images/pll/example_3.png" alt="image of thrid case" class="exampleimages">
+  <img src="images/pll/example_4.png" alt="image of fourth case" class="exampleimages">
+</div> 
+<div class="caption">
+ <p>These are an example of what 'headlights' looks like. Note that the side they are facing is not important; for our purposes, the two orange-yellow corners are considered solved.</p>
+</div>
+
+<h2>Algorithms:</h2>
+<div class="centered"> 
+	<p><img src="images/pll/headlights.png" alt="case 1" class="caseimageslarge" align="center" id="firstcaseimage"> (Headlights) R U R' U' R' F R2 U' R' U' R U R' F'
+	<img src="images/pll/diagonal.png" alt="case 2" class="caseimageslarge" align="center"> (Diagonal) F R U' R' U' R U R' F' R U R' U' R' F R F'</p>
+</div>
+
+<div class="caption"	>
+ <p>I believe that doing one algorithm over and over with random U layer turns in between will also solve this step eventually, due to the low number of possible positions.</p>
+</div>
+   
+<div class="forwardbackbutton">
+<a class="previous" href="method1-5.html" >&laquo; Previous: Yellow Corners</a>
+<a class="next" href="method1-7.html">Next Step: Permute Last Layer Sides &raquo;</a>
+</div>
+ <hr>
+ <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
+ I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+
+</body>
+
+</html>

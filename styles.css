@@ -1,0 +1,277 @@
+/*Note: The css started out very neat and organized, but as I added more stuff and tweaked existing formatting, it started to get really messy*/
+
+
+/* Navbar Styles  (To be honest, I have no idea how this works, but it does)*/
+.navbar {
+  background-color: #4c5b61;
+  font-family: verdana;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navbar .navbarlink {
+  float: left;
+  font-size: 16px;
+  color: #f7f9f9;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+.navbar dropbutton a {
+  color: #f7f9f9;
+  text-align: center;
+  float: left;
+  text-decoration: none;
+}
+
+.navbar .dropdown {
+  float: left;
+}
+
+.navbar .dropdown .dropbutton {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #f7f9f9;
+  padding: 0px 0px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+/* Whenever you hover anything in the navbar */
+.navbar .navbarlink:hover, .navbar .dropdown:hover .dropbutton, .navbar .dropdown-content a:hover, #active:hover, #activedrop:hover {
+  background-color: #2978a0 ;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #9dacb2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #4A7C95	;
+  z-index: 1;
+}
+
+
+.navbar .dropdown a {
+  float: none;
+  color: #f7f9f9 ;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+#active {
+  background-color: #333;
+}
+
+/* highlights dropdown menu in different colour when on its page*/
+#activedrop{
+  background-color: #4c5b61;
+}
+
+/* Buttons on bottom of page*/
+.btn-group {
+  text-align: center;
+  width: 100%;
+  margin-top:0px
+}
+
+.btn-group button {
+  background-color: #2978a0; 
+  color: #f7f9f9; 
+  padding: 10px 24px; 
+  cursor: pointer; 
+  float: center; 
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  width: 320px;
+  margin-right: 40px;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #4c5b61;
+}
+/* Scrollbar (very sorry if you don't have a scroll wheel)*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+/* The progress bar */
+.progress-container {
+  width: 15px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: #E6E6E6;
+  position: fixed;
+}
+.progress-bar {
+  height: 0%;
+  width: 15px;
+  top: 0;
+  position: fixed;
+  background: #C6C6C6;
+  border-radius: 8px;
+}
+/* Body Formatting */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 160px;
+  color: #42494C;
+  margin-top: 40px;	
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 120px;
+  margin-right: 200px;
+  font-size: 18px;
+}
+ul, li{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.smalltext {
+  font-size: 11px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 120px;
+  color: #333;	
+}
+
+a {
+  color: #2978a0;
+}
+
+.buttonimages {
+  width: 280px;
+  height: auto;
+  margin: 55px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.smallimages {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  float: right;
+}
+.centered {  /*for all div elements that need to contain centered stuff*/
+  text-align: center;
+}
+.caption {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom:30px;
+}
+.caption p {
+  font-size: 14px;
+  margin: 0px;
+}
+.centered p {
+  display: inline;
+  font-size: 16px;
+  margin-right: 0px;
+  margin-left:0px;
+}
+
+.exampleimages {
+  width: 250px;
+  height: auto;
+  margin: 50px;
+  
+}
+.caseimages {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  margin-left: 90px;
+  display: inline;
+}
+.caseimageslarge { /*larger images for some less crowded pages*/
+  width: 180px;
+  height: auto;
+  margin: 10px;
+  margin-left: 90px;
+  display: inline;
+}
+/*Fine tuning of image position, I eventually was able to line up 2 images with text in a row, but I didn't want to do it again for 3 and 4 images with text inline*/
+#firstcaseimage {
+ margin-left: 0px;
+}
+#left {
+  width: 45%;
+  float:left;
+  margin-right: 0px;
+  height: 120px;
+}
+#left p{
+  margin-right: 0px;
+}
+#right {
+  width: 55%;
+  float:left;
+  height: 120px;
+}
+#firstelement {  /*First element on page needs to have a larger top margin*/
+  margin-top: 100px;
+}
+
+
+.forwardbackbutton a {
+  font-size: 16px;
+  font-family: verdana;
+  color: white;
+  display: inline-block;
+  padding: 16px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.previous {
+  background-color: #63757C;
+  margin: 20px;
+  margin-left: 170px;
+}
+
+.next {
+  background-color: #2978a0;
+  float: right;
+  margin: 20px;
+  margin-right: 170px;
+}
+.forwardbackbutton a:hover {
+  background-color: #9dacb2;
+}
+
+.buttonimages:hover{  /*This transformation clips through the top nav-bar, I don't know why this happens, but it looks cool enough that I'm not going to change it, instead I adjusted the images so that they will never be covered by the nav-bar*/
+  transform: scale(1.1); 
+}
+.buttonimages {
+  transition: all .2s ease-in-out;
+}
+#nomarginleft {  /*very general name for getting a very specific image position*/
+  margin-left:0px;
+  margin-right: 25px;
+ }
+

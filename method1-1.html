@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="images/solved.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<title>Rubik's Cube Beginner's Method Guide</title>
+	
+    <script>
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.height = scrolled + "%";
+	}
+    </script>
+</head>
+
+<body>	
+	
+<div class="navbar">   <!--All of this is a navbar that is <5% of the screen-->
+  <a href="index.html" class="navbarlink">Home</a>
+  <div class="dropdown">
+    <button href="method1.html" class="dropbutton" id="active"><a href="method1.html">Beginner's Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method1-1.html" id="activedrop">White Cross</a>
+      <a href="method1-2.html">First Layer</a>
+      <a href="method1-3.html">Second Layer</a>
+      <a href="method1-4.html">Yellow Cross (2-look OLL)</a>
+      <a href="method1-5.html">Yellow Corners (2-look OLL)</a>
+      <a href="method1-6.html">Permute Corners (2-look PLL)</a>
+      <a href="method1-7.html">Permute Sides (2-look PLL)</a>       
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbutton"><a href="method2.html">CFOP Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method2-1.html">Cross</a>
+      <a href="method2-2.html">First 2 Layers (F2L)</a>
+      <a href="method2-3.html">Orient Last Layer (OLL)</a>
+      <a href="method2-4.html">Permute Last Layer (PLL)</a>
+    </div>
+  </div>
+       <a href="notation.html" class="navbarlink">Notation</a>
+</div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+<!--PAGE CONTENT STARTS HERE-->
+<h1 id="firstelement">Beginner's Method-Step 1: White Cross</h1>
+<hr>
+<img src="images/whitecross.png" alt="image of finished cross" class="smallimages">
+<p>The first step of almost all the different solving methods require us to make a cross with the colour we start on. For simplicity, we are only going to be starting our solves on the white side
+, to get familliar with the colour scheme of the cube faster.
+We need to make a cross shape on the white side, with the white coloured edge pieces. You can probably do this without any help, as it is quite intuitive.
+Make sure that the colour of the <b>edges match the centers directly below</b> them. As shown on the image to the right.</p>
+<p>This is a good time to learn intuitively about how the Rubik's turns, and practice manuplating the pieces. 
+See how far you can get without any help. Try to move the edge pieces in without disrupting pieces that are already solved. 
+When forming the cross, remember to only look for white <b>edge</b> pieces, which are pieces with 2 colours on them, with white as one of the colours. The other colour 
+of the piece tells you wbere it should go; a white-blue piece goes on the edge between the white and blue centers. (As shown on the image)</p>
+<p>If you need help solving the white cross, read the algorithms below. It is unlikely that using the algorithms will help you to learn the white cross, and 
+you should probably watch a video guide instead. Nonetheless, I will attempt to explain how to finish the white cross using algorithms and images.</p>
+<hr>
+<h2>Algorithms and complex cases:</h2>
+<p>Whether you are just stuck on a especially tough edge piece that's oriented wrong, or just have no idea how to even begin solving the cross. Here are some algorithms
+that may or may not help. Hold the white center upwards, find a white edge piece, and move it to the side that the other colour of the piece is. (In this case, it will be the white-red piece").
+Hold the cube so that the non-white colour on the edge is the colour of the side on the front of the cube. Keep in mind that the cross will not already be 3/4ths made when you do these algorithms.
+Notice how the fourth case is the same as the third, but you just need to first move the piece to the other side with a <b>F2</b> move.</p>
+  <div class="centered">
+	<p><img src="images/beginner_cross/case1.png" alt="case 1" class="caseimageslarge" align="center" id="firstcaseimage"> F U' R U
+	<img src="images/beginner_cross/case2.png" alt="case 2" class="caseimageslarge" align="center"> F' R' D' R F2'
+	<img src="images/beginner_cross/case3.png" alt="case 3" class="caseimageslarge" align="center"> R' D' R F2'
+	<img src="images/beginner_cross/case4.png" alt="case 4" class="caseimageslarge" align="center"> F2 (R' D' R F2')</p>
+ </div>
+ <p>Here are some simpler cases:</p>
+   <div class="centered">
+	<p><img src="images/beginner_cross/case5.png" alt="case 5" class="caseimageslarge" align="center" id="firstcaseimage"> F2
+	<img src="images/beginner_cross/case6.png" alt="case 6" class="caseimageslarge" align="center"> F
+	<img src="images/beginner_cross/case7.png" alt="case 7" class="caseimageslarge" align="center"> F'
+	<img src="images/beginner_cross/case8.png" alt="case 8" class="caseimageslarge" align="center"> (In case edges are swapped) R' U' R U' R' </p>
+ </div>
+ 
+<div class="centered" style="margin:40px;">
+ <p>Remember: <b>These algorithms should NOT need to be memorized</b>, these are only used to help you learn how to solve the cross intuitively later.</p>
+</div>
+  
+ <div class="forwardbackbutton">
+<a class="previous" href="method1.html" >&laquo; Previous: Introduction</a>
+<a class="next" href="method1-2.html">Next Step: First Layer &raquo;</a>
+</div>
+ <hr>
+ <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
+ I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+
+</body>
+
+</html>

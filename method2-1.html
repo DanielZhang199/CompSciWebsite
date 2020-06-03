@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="images/solved.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<title>Rubik's Cube CFOP Method</title>
+	
+    <script>
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.height = scrolled + "%";
+	}
+    </script>
+</head>
+
+<body>	
+<div class="navbar">  <!--All of this is a navbar that is <5% of the screen-->
+  <a href="index.html" class="navbarlink">Home</a>
+  <div class="dropdown">
+    <button class="dropbutton"><a href="method1.html">Beginner's Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method1-1.html">White Cross</a>
+      <a href="method1-2.html">First Layer</a>
+      <a href="method1-3.html">Second Layer</a>
+      <a href="method1-4.html">Yellow Cross (2-look OLL)</a>
+      <a href="method1-5.html">Yellow Corners (2-look OLL)</a>
+      <a href="method1-6.html">Permute Corners (2-look PLL)</a>
+      <a href="method1-7.html">Permute Sides (2-look PLL)</a>              
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbutton" id="active"><a href="method2.html">CFOP Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method2-1.html" id="activedrop">Cross</a>
+      <a href="method2-2.html">First 2 Layers (F2L)</a>
+      <a href="method2-3.html">Orient Last Layer (OLL)</a>
+      <a href="method2-4.html">Permute Last Layer (PLL)</a>
+    </div>
+  </div>
+     <a href="notation.html" class="navbarlink">Notation</a>
+</div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+<!-- PAGE CONTENT STARTS HERE -->
+
+<h1 id="firstelement">CFOP Method-Step 1: The Cross</h1> 
+<hr>
+ <img src="images/cfopcross.png" alt="image of finished white cross" class="smallimages">
+<p>If you are on this page, I would assume that you are already familliar with the solving the Beginner's method's <a href="method1-1.html">white cross</a> already, and this step is very simliar.
+The goal of this step is to form a cross at the bottom of the Rubik's Cube in a way that the colours on the sides of the first layer match the centre pieces of the second layer; 
+note that you do not have to start on the white side if there is another side that is in a more solved position.
+By now, you should be able to solve the cross intuitively, instead of relying of algorithms, which can allow you to solve this step in much fewer steps.
+You should practice this step until you can easily form a cross on any side of a Rubik's cube in 8 moves or less, which is always possible.
+ </p>
+<p>Experienced cubers almost always memorize the moves for this step when they inspect the cube. 
+Before you attempt your solve, try to memorize the sequence of moves to solve the cross on the fastest side.</p>	
+<p>Due to the cross not needing you to memorize algorithms, your time should be used to practice solving this step quickly with as little moves as possible.</p>
+
+<hr style="margin-top: 20px">
+<h1>Tips for a faster cross:</h1>
+
+<h2>Hold the white face down:</h2>
+<p>Hold your cube in your hands with the white centre facing down to improve your solution time. 
+With a lot of practice you won't need to see the white cross because you will know what's going on down there according to the color scheme of your puzzle, 
+your moves and what you see on the top. This way you don't have to turn your cube around, saving a lot of time.</p>
+<p>Also, solving the cross on the bottom side can allow you to look ahead to the next step (F2L).</p>
+
+<h2>Work on efficiency:</h2>
+<p>Many people tend to rush the cross, leading them to make more inefficient moves, taking up more time overall.
+ Work on solving the cross slowly with as little moves as possible; with enough practice, you will soon be able to execute those moves much faster.</p>
+
+<h2>Practice colour neutrality:</h2>
+<p>The term colour neutral means that you are able to solve the cube starting and ending with any colour. 
+For example, while most people have to start on the white cross for their solves, colour neutral solvers are able to start on the side that has the most favourable position.
+While this concept doesn't sound difficult, some tend to struggle with colour neutrality and find it not worth the split-second that it can shave off.</p>
+ 
+<div class="forwardbackbutton">
+<a class="previous" href="method2.html" >&laquo; Previous: Introduction</a>
+<a href="method2-2.html" class="next">Next Step: F2L &raquo;</a>
+</div>
+<hr>
+ <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
+ I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="images/solved.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<title>Rubik's Cube Beginner's Method Guide</title>
+	
+    <script>
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.height = scrolled + "%";
+	}
+    </script>
+</head>
+
+<body>	
+<div class="navbar">  <!--All of this is a navbar that is <5% of the screen-->
+  <a href="index.html" class="navbarlink">Home</a>
+  <div class="dropdown">
+    <button class="dropbutton" id="active"><a href="method1.html">Beginner's Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method1-1.html">White Cross</a>
+      <a href="method1-2.html">First Layer</a>
+      <a href="method1-3.html">Second Layer</a>
+      <a href="method1-4.html">Yellow Cross (2-look OLL)</a>
+      <a href="method1-5.html">Yellow Corners (2-look OLL)</a>
+      <a href="method1-6.html">Permute Corners (2-look PLL)</a>
+      <a href="method1-7.html">Permute Sides (2-look PLL)</a>            
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbutton"><a href="method2.html">CFOP Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method2-1.html">Cross</a>
+      <a href="method2-2.html">First 2 Layers (F2L)</a>
+      <a href="method2-3.html">Orient Last Layer (OLL)</a>
+      <a href="method2-4.html">Permute Last Layer (PLL)</a>
+    </div>
+  </div>
+       <a href="notation.html" class="navbarlink">Notation</a>
+</div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  
+<!--PAGE CONTENT STARTS HERE-->
+<h1 id="firstelement">How to Solve the Rubik's Cube/Beginner's Method</h1>
+<hr>
+<h2>Introduction</h2>
+<p>This will be a simple Rubik's Cube tutorial, with the intention of teaching someone who has never solved the cube the simplest method to do so.
+For this method, there will be only a few algorithms to learn, or about 2 for each step.
+With a few days of practice, you should be memorize all the algorithms and solve the cube in under 4 minutes each time.</p>
+<p>The Beginner's method divides the Rubik's Cube into 3 layers, and is considered a layer-by-layer method (simliar to the CFOP method).
+There are 7 steps in total, 2 for the first layer, 1 for the second layer, and 4 for the last layer.
+We begin by making a white cross, then solving the white layer. The middle layer has 4 edge pieces to solve before we move onto the hardest part of the solve, the last layer.
+To learn how to solve the last layer the easiest, it will be broken into 4 steps. 
+</p><p>We first make a yellow cross, and then make orient all the corner pieces after.
+This is called 2-look OLL (Orient Last Layer). However, while all the yellow faces are pointing in the right direction, the pieces are in the wrong positions.
+This requires PLL (Permute Last Layer) to fix, we will move the corners to the right position, then the edges. 
+After 2-look PLL, we will have completed the beginner's method and (hopefully) solved the Rubik's Cube!</p>
+<p>To begin learning the Beginner's method, start with the <a href="method1-1.html">White Cross.</a></p>
+<hr>
+<h2>Steps:</h2>	
+<div class="btn-group">
+  <button onclick="window.location.href='method1-1.html'" >White Cross</button> <!-- These buttons use javascript, because I don't want to put links inside of them-->
+  <button onclick="window.location.href='method1-2.html'">First Layer</button>
+  <button onclick="window.location.href='method1-3.html'">Second Layer</button>
+</div>
+<div class="btn-group"><!--Some of these images are recycled, hence the strange naming scheme-->
+	<img src="images/whitecross.png" alt="image of finished white cross" class="buttonimages">
+	<img src="images/firstlayer.png" alt="image of finished first layer" class="buttonimages">
+	<img src="images/secondlayer.png" alt="image of finished second" class="buttonimages">
+</div>
+<div class="btn-group" style="margin-top:100px;">
+  <button onclick="window.location.href='method1-4.html'" >Yellow Cross</button> 
+  <button onclick="window.location.href='method1-5.html'">Orient Yellow Corners</button>
+  <button onclick="window.location.href='method1-6.html'">Permute Yellow Corners</button>
+  <button onclick="window.location.href='method1-7.html'">Permute Yellow Sides</button>
+</div>
+<div class="btn-group">  
+  <img src="images/yellowcross.png" alt="image of finished yellow cross" class="buttonimages">
+  <img src="images/oll.png" alt="image of finished OLL" class="buttonimages">
+  <img src="images/pll1.png" alt="image of corner permutation" class="buttonimages">
+  <img src="images/pll2.png" alt="image of solved cube" class="buttonimages">
+</div> 
+
+ <hr>
+ <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
+ I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+
+</body>
+
+</html>

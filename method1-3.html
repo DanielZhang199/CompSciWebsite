@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="images/solved.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<title>Rubik's Cube Beginner's Method Guide</title>
+	
+    <script>
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.height = scrolled + "%";
+	}
+    </script>
+</head>
+
+<body>	
+	
+<div class="navbar">   <!--All of this is a navbar that is <5% of the screen-->
+  <a href="index.html" class="navbarlink">Home</a>
+  <div class="dropdown">
+    <button href="method1.html" class="dropbutton" id="active"><a href="method1.html">Beginner's Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method1-1.html">White Cross</a>
+      <a href="method1-2.html">First Layer</a>
+      <a href="method1-3.html" id="activedrop">Second Layer</a>
+      <a href="method1-4.html">Yellow Cross (2-look OLL)</a>
+      <a href="method1-5.html">Yellow Corners (2-look OLL)</a>
+      <a href="method1-6.html">Permute Corners (2-look PLL)</a>
+      <a href="method1-7.html">Permute Sides (2-look PLL)</a>     
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbutton"><a href="method2.html">CFOP Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method2-1.html">Cross</a>
+      <a href="method2-2.html">First 2 Layers (F2L)</a>
+      <a href="method2-3.html">Orient Last Layer (OLL)</a>
+      <a href="method2-4.html">Permute Last Layer (PLL)</a>
+    </div>
+  </div>
+       <a href="notation.html" class="navbarlink">Notation</a>
+</div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+<!--PAGE CONTENT STARTS HERE-->
+<h1 id="firstelement">Beginner's Method-Step 3: Second Layer</h1>
+<hr>
+<img src="images/secondlayer.png" alt="image of finished second layer" class="smallimages">
+<p>The second layer of the Beginner's Method is point in the solve where many people are no longer able to complete intuitively anymore.
+However, this step only has 2 algorithms and is probably the easiest step of the solve for people with no prior expirence.
+From this step onwards, we will need to turn the cube so that the white side is on the bottom and yellow is on top.</p>
+<p>For this step, we need to move the non-yellow edge pieces to the correct positions. These pieces are the blue-red, red-green, green-orange, and orange-blue pieces.
+(You don't really need to remember that). We will need find a edge piece on the top layer and line it up in the way that the algorithm pictures show.</p>
+<hr>
+<h2>The Right and Left Algorithms:</h2>
+<p>Each of the edges can be in one of these 4 cases:</p>
+<div class="centered">
+  <img src="images/second_layer/example_1.png" alt="image of first case" class="exampleimages">
+  <img src="images/second_layer/example_2.png" alt="image of second case" class="exampleimages">
+  <img src="images/second_layer/example_3.png" alt="image of thrid case" class="exampleimages">
+  <img src="images/second_layer/example_4.png" alt="image of fourth case" class="exampleimages">
+</div> 
+<p>The 2 algorithms of this step are very simliar, being left and right variations of each other. We can know which one we should use by looking at the top colour of the piece.
+ There are 2 important colours that tell you which case you have for the first 2 cases. The colour facing you on the side piece you are trying to insert deterimines which side you should move the piece
+ to. Hold that side, green in this case, in front. Then, look at the colour on the top of the edge you are trying to insert. In this case, the colour can be red or orange (red is opposite orange). This 
+ colour determines which side (use which of the left or right algorithms) that you should move to piece to.</p>
+<p>In case the edge you choose in already in the middle layer but flipped or in the wrong spot, like in the 2 other cases, use the algorithm to insert a yellow edge into that spot instead, 
+and the piece should be on the top layer now.
+</p>
+ <div>
+	<p><img src="images/second_layer/example_1.png" alt="case 1" class="caseimageslarge" align="center" id="firstcaseimage">&rarr;
+	<img src="images/second_layer/case1.png" alt="case 2" class="caseimageslarge" align="center" id="nomarginleft">Right Algorithm: U R U' R' U' F' U F
+	<img src="images/second_layer/example_2.png" alt="case 2" class="caseimageslarge" align="center"> &rarr;
+	<img src="images/second_layer/case2.png" alt="case 2" class="caseimageslarge" align="center" id="nomarginleft">Left Algorithm: U' L' U L U F U' F'</p>
+ </div>
+  <div class="forwardbackbutton">
+<a class="previous" href="method1-2.html" >&laquo; Previous: First Layer</a>
+<a class="next" href="method1-4.html">Next Step: Yellow Cross &raquo;</a>
+</div>
+ <hr>
+ <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
+ I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+
+</body>
+
+</html>

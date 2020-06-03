@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="images/solved.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<title>Rubik's Cube CFOP Method</title>
+	<script>
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.height = scrolled + "%";
+	}
+    </script>
+</head>
+
+<body>	
+<div class="navbar">  <!--All of this is a navbar that is <5% of the screen-->
+  <a href="index.html" class="navbarlink">Home</a>
+  <div class="dropdown">
+    <button class="dropbutton"><a href="method1.html">Beginner's Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method1-1.html">White Cross</a>
+      <a href="method1-2.html">First Layer</a>
+      <a href="method1-3.html">Second Layer</a>
+      <a href="method1-4.html">Yellow Cross (2-look OLL)</a>
+      <a href="method1-5.html">Yellow Corners (2-look OLL)</a>
+      <a href="method1-6.html">Permute Corners (2-look PLL)</a>
+      <a href="method1-7.html">Permute Sides (2-look PLL)</a>        
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbutton" id="active"><a href="method2.html">CFOP Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method2-1.html">Cross</a>
+      <a href="method2-2.html">First 2 Layers (F2L)</a>
+      <a href="method2-3.html">Orient Last Layer (OLL)</a>
+      <a href="method2-4.html" id="activedrop">Permute Last Layer (PLL)</a>
+    </div>
+  </div>
+   <a href="notation.html" class="navbarlink">Notation</a>
+</div>
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+</div>
+
+<!-- PAGE CONTENT STARTS HERE -->
+<h1 id="firstelement">CFOP Method-Step 4: Permute Last Layer (PLL)</h1> 
+<hr>
+<img src="images/solved.png" alt="image of finished PLL" class="smallimages">
+<p>The last step of the CFOP/Fridrich method is to permute the last layer (PLL).
+Full PLL solves the top face in 1 step, with 21 algorithms/different swaps.</p>
+<p>Full PLL should be the easiest step to learn after beginner's method, as there are the least number of algorithms to memorize for this step.
+That being said, PLL should be the first part of this guide to learn, as anyone that is able to memorize beginner's method should be able to memorize PLL.</p>
+<p>You should already know 6 PLL algorithms from 2-look PLL, and the rest of the algorithms are all variation of each other (as you can't do much without messing up the cube at this point)
+As this is likely the first step of CFOP that many memorize, I would recommend starting slow with learning 2-4 algorithms each day, and practicing learned algorithms every day on a solved cube.</p>
+<p>Each of the possible PLL swaps have a name, describing the shape of the swap (i.e. T-Swap swaps corners and eddges in a 'T' shape)
+Not all cubes can quickly do <b>M</b> moves, so there will be an altnerative algorithm for algorithms that contain <b>M</b> moves.
+PLL will take a lot of practice outside of memorizing algorithms, as you will need to know which way the colours of the sides should be arranged.
+This page will list and name each of the different PLL algorithms:</p>
+<hr>
+<h2>Edges Only:</h2>
+<p>This is also the 2nd part of 2-look PLL.</p>
+ <div>
+	<p><img src="images/pll/case1.png" alt="case 1" class="caseimages" align="center" id="firstcaseimage"> H-Perm: M2' U M2' U2 M2' U M2'|R2' U2 R' U2 R2' U2' R2' U2 R' U2 R2'
+	<img src="images/pll/case4.png" alt="case 4" class="caseimages" align="center"> Z-Perm: M2 U M2 U M U2 M2 U2 M U2|R U R' U R' U' R' U R U' R' U' R2 U R U2</p>
+ </div>
+  <div>
+	<p><img src="images/pll/case2.png" alt="case 2" class="caseimages" align="center" id="firstcaseimage"> U-Perm (a): R U' R U R U R U' R' U' R2
+	<img src="images/pll/case3.png" alt="case 3" class="caseimages" align="center"> U-Perm (b): L' U L' U' L' U' L' U L U L2|R' U R' U' R' U' R' U R U R2 (depending on hand preference)</p>
+ </div>
+
+ 
+<h2>Corners Only:</h2>
+  <div>
+	<p><img src="images/pll/case5.png" alt="case 5" class="caseimages" align="center" id="firstcaseimage"> A-Perm (a): x L2 D2 L' U' L D2 L' U L'
+	<img src="images/pll/case6.png" alt="case 6" class="caseimages" align="center"> A-Perm (b): x' L2 D2 L U L' D2 L U' L
+	<img src="images/pll/case7.png" alt="case 7" class="caseimages" align="center"> E-Perm: x' L' U L D' L' U' L D L' U' L D' L' U L D</p>
+ </div>
+ 
+<h2>Edges and Corners:</h2>
+<p>While the G-perm looks complicated, you can tell which G-perm you have by pointing the 2 corner colours that match to the left.</p> <!--I was able to align these images-->
+ <div>
+	<div id="left"><p><img src="images/pll/caseF.png" alt="case 8" class="caseimages" align="center" id="firstcaseimage"> F-Perm: R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R</p></div>
+	<div id="right"><p><img src="images/pll/caseT.png" alt="case 17" class="caseimages" align="center" id='firstcaseimage'> T-Perm: R U R' U' R' F R2 U' R' U' R U R' F'</p></div>
+ </div>
+  <div>
+	<div id="left"><p><img src="images/pll/caseGa.png" alt="case 9" class="caseimages" align="center" id="firstcaseimage"> G-Perm (a): R2 U R' U R' U' R U' R2 U' D R' U R D'</p></div>
+	<div id="right"><p><img src="images/pll/caseGb.png" alt="case 10" class="caseimages" align="center" id='firstcaseimage'> G-Perm (b): R' U' R U D' R2 U R' U R U' R U' R2 D</p></div>
+ </div>
+  <div>
+	<div id="left"><p><img src="images/pll/caseGc.png" alt="case 11" class="caseimages" align="center" id="firstcaseimage"> G-Perm (c): R2 U' R U' R U R' U R2 U D' R U' R' D</p></div>
+	<div id="right"><p><img src="images/pll/caseGd.png" alt="case 12" class="caseimages" align="center" id='firstcaseimage'> G-Perm (d): R U R' U' D R2 U' R U' R' U R' U R2 D'</p></div>
+ </div>
+  <div>
+	<div id="left"><p><img src="images/pll/caseJa.png" alt="case 13" class="caseimages" align="center" id="firstcaseimage"> J-Perm (a): x R2 F R F' R U2 r' U r U2</p></div>
+	<div id="right"><p><img src="images/pll/caseJb.png" alt="case 14" class="caseimages" align="center" id='firstcaseimage'> J-Perm (b): R U R' F' R U R' U' R' F R2 U' R'</p></div>
+ </div>
+   <div>
+	<div id="left"><p><img src="images/pll/caseRa.png" alt="case 15" class="caseimages" align="center" id="firstcaseimage"> R-Perm (a): R U' R' U' R U R D R' U' R D' R' U2 R'</p></div>
+	<div id="right"><p><img src="images/pll/caseRb.png" alt="case 16" class="caseimages" align="center" id='firstcaseimage'> R-Perm (b): R2 F R U R U' R' F' R U2 R' U2 R</p></div>
+ </div>
+   <div>
+	<div id="left"><p><img src="images/pll/caseNa.png" alt="case 18" class="caseimages" align="center" id="firstcaseimage"> N-Perm (a): R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'</p></div>
+	<div id="right"><p><img src="images/pll/caseNb.png" alt="case 19" class="caseimages" align="center" id='firstcaseimage'> N-Perm (b): R' U R U' R' F' U' F R U R' F R' F' R U' R</p></div>
+ </div>
+  <div > 
+	<div id="left"><p><img src="images/pll/caseV.png" alt="case 20" class="caseimages" align="center" id="firstcaseimage"> V-Perm: R' U R' U' y R' F' R2 U' R' U R' F R F</p></div>
+	<div id="right"><p><img src="images/pll/caseY.png" alt="case 21" class="caseimages" align="center" id='firstcaseimage'> Y-Perm: F R U' R' U' R U R' F' R U R' U' R' F R F'</p></div>
+ </div>
+ 
+<div class="forwardbackbutton" style="margin-top:890px;"><!--This one needs a large margin as the images are floating above (not good design, but I just wanted side by side images)-->
+<a class="previous" href="method2-3.html" >&laquo; Previous: OLL</a>
+<a class="next" href="method2.html">Finish &raquo;</a>
+</div>
+<hr>
+ <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
+ I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+
+</body>
+
+</html>
