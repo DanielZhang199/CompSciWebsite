@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" href="images/solved.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<title>Rubik's Cube Beginner's Method Guide</title>
+	
+    <script>
+	window.onscroll = function() {myFunction()};
+
+	function myFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("myBar").style.height = scrolled + "%";
+	}
+    </script>
+</head>
+
+<body>	
+	
+<div class="navbar">   <!--All of this is a navbar that is <5% of the screen-->
+  <a href="index.html" class="navbarlink">Home</a>
+  <div class="dropdown">
+    <button href="method1.html" class="dropbutton" id="active"><a href="method1.html">Beginner's Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method1-1.html">White Cross</a>
+      <a href="method1-2.html">First Layer</a>
+      <a href="method1-3.html">Second Layer</a>
+      <a href="method1-4.html">Yellow Cross (2-look OLL)</a>
+      <a href="method1-5.html">Yellow Corners (2-look OLL)</a>
+      <a href="method1-6.html">Permute Corners (2-look PLL)</a>
+      <a href="method1-7.html" id="activedrop">Permute Sides (2-look PLL)</a>     
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbutton"><a href="method2.html">CFOP Method</a>
+    </button>
+    <div class="dropdown-content">
+      <a href="method2-1.html">Cross</a>
+      <a href="method2-2.html">First 2 Layers (F2L)</a>
+      <a href="method2-3.html">Orient Last Layer (OLL)</a>
+      <a href="method2-4.html">Permute Last Layer (PLL)</a>
+    </div>
+  </div>
+       <a href="notation.html" class="navbarlink">Notation</a>
+</div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+
+<!--PAGE CONTENT STARTS HERE-->
+<h1 id="firstelement">Beginner's Method-Step 7: Permute Edges</h1>
+<hr>
+<img src="images/pll2.png" alt="image of solved cube" class="smallimages">
+<p>By this step, your Rubik's Cube should look almost completely solved, however the yellow edge pieces are still in the wrong position and don't line up with the corners and centers.
+For this step, we will be moving the yellow edge pieces to match the colours of each of the side center pieces, which will solve the entire cube.
+This step is the least intuitive to grasp, but all you need to know is that using the algoritms shown below will lead to the edge pieces swapping as indicated by the arrows.
+There are 4 different algorithms for this step, but you can solve the any of the cases knowing any amount of algorithms.</p>
+<p>To use the algorithms for this step, make sure you first align the corners to that the colours on the corners match the rest of the sides, as shown at the end of corner PLL.
+There will be either 3 or 4 edges that are in the wrong position, which you can tell by the 'headlights' on that side, as a edge in the right place will just be a solved line without headlights.
+If there are 3 edges in the wrong position, hold the cube so that the center headlights are facing you, and the back is the solved edge piece. 
+Then, note the colour of the edge piece and figure out which side it needs to move to.
+If the edge piece needs swap with the left, use the left-handed U permutation, and vice versa for right.</p>
+<p>If there are 4 edges that need to be solve (no solved edges), then note if the edges are swapped striaght across, or diagonally.
+Then use the appropriate algorithms to solve the cube (it will work no matter which side is facing fowards).</p>
+<p>If you don't want to learn all 4 algorithms, you can also only learn the first algorithm, which is the counter-clockwise (right-handed) U-perm. 
+In order to do this, all you need to do is to always hold the cube so the center headlights face towards you before using the algorithm.
+If there are 4 headlights (no center one) you can use the algorithm on any side.</p>
+<hr>
+<h2>Examples of each case:</h2>
+<p>In order, these are examples of case where you should use the: Right U-Perm, Left U-Perm, H-Perm (Straight Swap), and Z-Perm (Diagonal Swap).
+The back side is already solved in the first 2 cases, but not in the last 2 cases.</p>
+<div class="centered">
+  <img src="images/pll/example_5.png" alt="image of first case" class="exampleimages">
+  <img src="images/pll/example_6.png" alt="image of second case" class="exampleimages">
+  <img src="images/pll/example_7.png" alt="image of thrid case" class="exampleimages">
+  <img src="images/pll/example_8.png" alt="image of fourth case" class="exampleimages">
+</div> 
+
+<h2>Algorithms:</h2> <!--I did not number these images right when I made them, and the elements are floating so there needs to be a large margin between the divs, as the class style did not account for large images-->
+ <div>
+	<div id="left"><p><img src="images/pll/case2.png" alt="case 1" class="caseimageslarge" align="center"> U-Perm (right): R U' R U R U R U' R' U' R2</p></div>
+	<div id="right"><p><img src="images/pll/case3.png" alt="case 2" class="caseimageslarge" align="center"> U-Perm (left): L' U L' U' L' U' L' U L U L2</p></div>
+ </div style="margin-bottom: 300px;"> 
+ <div style="margin-top:300px; padding-bottom: 300px">
+	<div id="left"><p><img src="images/pll/case1.png" alt="case 3" class="caseimageslarge" align="center"> H-Perm: R2' U2 R' U2 R2' U2' R2' U2 R' U2 R2'</p></div>
+	<div id="right"><p><img src="images/pll/case4.png" alt="case 4" class="caseimageslarge" align="center"> Z-Perm: R U R' U R' U' R' U R U' R' U' R2 U R U2</p></div>
+ </div>
+<hr>
+<img src="images/pll2.png" alt="image of solved cube" class="smallimages" style="float:left">
+<img src="images/pll2.png" alt="image of solved cube" class="smallimages" style="float:right">
+<div style="margin-bottom:50px;">
+<h2>Congratulations!</h2>
+<p>You have solved the Rubik's Cube!</p>
+</div>
+<div class="forwardbackbutton">
+<a class="previous" href="method1-6.html" >&laquo; Previous: Permute Last Layer Corners</a>
+<a class="next" href="method1.html">Finish &raquo;</a>
+</div>
+ <hr>
+ <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
+ I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+
+</body>
+
+</html>
