@@ -1,6 +1,9 @@
-/*Note: The css started out very neat and organized, but as I added more stuff and tweaked existing formatting, it started to get really messy*/
-
-
+#container {  /*1905px because this maxmizes screen size and the scroll bar and scroll indicator are 15 pixels wide, leaving 1905 pixels for standard resolution screens*/
+  width: 1905px; /* due to bad foresight, I don't recommend viewing the website on devices without 1080p displays. I have no idea what happens if your screen isn't 1080p*/
+  height: auto;  
+  margin:0px;
+  padding: 0px;
+}
 /* Navbar Styles  (To be honest, I have no idea how this works, but it does)*/
 .navbar {
   background-color: #4c5b61;
@@ -104,22 +107,24 @@
 .btn-group button:hover {
   background-color: #4c5b61;
 }
-/* Scrollbar (very sorry if you don't have a scroll wheel)*/
+/* Scrollbar (very sorry if you don't have a scroll wheel), you can still scroll by dragging the rightmost pixel of the scroll bar*/
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 1px;
+  height: 10px; 	/* as the website retains 1920 px width when resized, there will be a scroll bar on different screens for the width*/
 }
 /* The progress bar */
 .progress-container {
-  width: 15px;
+  width: 14px;
   top: 0;
   right: 0;
   height: 100%;
   background: #E6E6E6;
   position: fixed;
+  margin: 0px;
 }
 .progress-bar {
   height: 0%;
-  width: 15px;
+  width: 14px;
   top: 0;
   position: fixed;
   background: #C6C6C6;
@@ -144,16 +149,16 @@ ul, li{
   margin-top: 20px;
   font-size: 18px;
 }
-.smalltext {
-  font-size: 11px;
-}
 
-h2 {
+
+h2, .hformat {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 40px;
   margin-bottom: 30px;
   margin-left: 120px;
   color: #333;	
+  font-size: 24px;
+  font-weight: bolder;
 }
 
 a {
@@ -215,7 +220,7 @@ a {
   margin-left: 90px;
   display: inline;
 }
-/*Fine tuning of image position, I eventually was able to line up 2 images with text in a row, but I didn't want to do it again for 3 and 4 images with text inline*/
+/*Fine tuning of image position, this was before I added tables, and all my image tags will pretty much have this by now, ideally, I would change it so that this would make a image have a margin instead of no margin*/
 #firstcaseimage {
  margin-left: 0px;
 }
@@ -274,4 +279,31 @@ a {
   margin-left:0px;
   margin-right: 25px;
  }
+#20pxmargintop {
+  margin-top: 20px
+}
 
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #9dacb2	;
+  color: white;
+  margin-right: 15px;
+  margin-bottom: 0px;
+}
+.smalltext {
+  font-size: 12px;
+}
+
+.centered td{
+  border: 1px solid #4c5b61	;
+  padding: 8px;
+}
+.centered tr:nth-child(even){background-color: #f7f7f7;}
+
+.centered table {
+  font-size: 16px;
+  border-collapse: collapse;
+  margin: 50px;
+  display: inline;
+}

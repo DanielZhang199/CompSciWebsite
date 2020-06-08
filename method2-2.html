@@ -50,22 +50,22 @@
 </div>
 
 <!-- PAGE CONTENT STARTS HERE -->
-
+<div id="container">
 <h1 id="firstelement">CFOP Method-Step 2: First Two Layers (F2L)</h1> 
 <hr>
 <img src="images/first_2_layers.png" alt="image of finished F2L" class="smallimages">
 <p> This step is where the difficulty of memorizing the CFOP method starts to come in, as there are 41 different cases in this step to memorize (42 if you count a pre-solved pair). </p>
-<p>Now, you may be thinking: "41 algorithms? This step has more than double the algorithms of the beginner's method!"</p>
-<p>However, as this step is fairly intuitive, you can ease into learning F2L by watching a guide on intuitive F2L, which only uses 4 'algorithms', at the cost of being slower for complex cases.</p>
+<p>42 algorithms sound like a lot, as it is more than double the amount of algorithms than in the beginner's method.
+ However, as this step is fairly intuitive, you can first start learning F2L by watching a guide on intuitive F2L, which only uses 4 algorithms, at the cost of being slower for complex cases.</p>
 <p> The first two layers (F2L) step, as the name implies, involves solving the first and second layer simultaneously, by solving the first layer corners and edges as pairs. 
  The 41 possible cases in this step can be solved intuitively but it's more useful to to be able to memorize the cases instead.
  While practicing this step, refer to this page or have a table of algorithms printed on your desk for guidance.
- I would recommend learning this step last if you already know intuitive F2L from another source.</p>
+ I would recommend learning this step last if you already know intuitive F2L.</p>
 <p>Solving the F2L intuitively is much more difficult to teach or learn from an online text guide, so I recommend you watch a Youtube tutorial on this step if you want to learn more about intuitive F2L. 
  Intuitive F2L is also slower to execute in solves, and for that reason this page will only be covering the non-intuitive F2L algorithms.</p>
- <p>After mastering the CFOP method (sub-15 second solves), and even COLL, you can try to learn the winter variation of F2L (which is probably the most difficult variation, with 77 cases of F2L), where you can solve OLL while inserting the last F2L pair. 
- However, this is way beyond the scope of this guide.</p>
-<hr style="margin-top: 80px">
+ <p>After mastering the CFOP method (sub-15 second solves), you can try learning VLS (Valk Last Slot), or at least the winter variation, where you can solve OLL while inserting the last F2L pair. 
+ However, this is beyond the scope of this guide. <i>(I really don't want to make more graphics after this.)</i></p>
+<hr>
 <h2>Explaination of F2L:</h2>
 <p>In order to get to the position of one of the cases, you must first locate one of the four corner-edge pairs to solve. For ease of explaination, assume you are solving the white side F2L.
 Corner-edge pairs are white corner pieces, and the edge piece with the same two colours.
@@ -83,103 +83,124 @@ The following 4 images depict all the corner-edge pairs to solve when starting f
 <p>Obviously, in a actual solve, the pairs will not be already made for you, and you need to use the algorithms to pair them up and insert the pair into the appropriate places.
 The last image shows the relative positions that the edge (red) and corner (orange) pieces need to be in order to use the algorithms.
 Sometimes, the pieces will already be in the position, but you may also need to move the pieces to the top layer to use the algorithms.
-Knowing when each case is true will take practice, and you may want to consult a video guide on this step to see an example of basic F2L.</p>
+Knowing how to get to each of the cases will take expirence and it would likely be easier if you watch videos walking through basic F2L.</p>
 
- <h1>Cases:</h1>
+ <h1 id="20pxmargintop">Cases:</h1>
 <hr>
 <p>Now that you have the pieces in the right position, you will need to select and execute the moves to solve the specific F2L case that you have.
 The algorithms here are not the only ones that can be used, however, they should be fine for the purpose of right-handed solvers learning F2L for the first time.
 Brackets signify that moves should be done together in quick succession.</p>
 
- <h2>1: Easy cases</h2>
+<ol>
+ <li class="hformat">Easy cases</li>
 <p>These can be solved in 3 and 4 moves, intuitive solvers will usually try to move the pieces into one of these positions in order to solve it:</p>
+
+<div class="centered">
+  <table>
+  <tr><td><img src="images/f2l/f2l_case1.png" alt="case 1" class="caseimages" align="center" id="firstcaseimage"></td><td><p>(F' U' F)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case2.png" alt="case 2" class="caseimages" align="center" id="firstcaseimage"></td><td><p>(R U R')</p></td></tr>
+  </table>
+  	
+  <table>
+  <tr><td><img src="images/f2l/f2l_case3.png" alt="case 3" class="caseimages" id="firstcaseimage"></td><td><p>(U' F' U F)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case4.png" alt="case 4" class="caseimages" id="firstcaseimage"></td><td><p>(U R U' R')</p></td></tr>
+  </table>
+</div>
+
+ <li class="hformat">Corner in bottom spot, edge in top layer</li>
+<p>Note the first two cases are simliar to the beginner's method: <!--These tables are going to get very messy --></p>
+<div class="centered">
+  <table>
+  <tr><td><img src="images/f2l/f2l_case5.png" alt="case 5" class="caseimages" id="firstcaseimage"></td><td><p>(U R U' R') (U' F' U F)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case6.png" alt="case 6" class="caseimages" id="firstcaseimage"></td><td><p>(U' F' U F) (U R U' R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case7.png" alt="case 7" class="caseimages" id="firstcaseimage"></td><td><p>(F' U F) (U' F' U F)</p></td></tr>
+  </table>
+  	
+  <table>
+  <tr><td><img src="images/f2l/f2l_case8.png" alt="case 8" class="caseimages" id="firstcaseimage"></td><td><p>(R U R') (U' R U R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case9.png" alt="case 9" class="caseimages" id="firstcaseimage"></td><td><p>(R U' R') (U R U' R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case10.png" alt="case 10" class="caseimages" id="firstcaseimage"></td><td><p>(F' U' F) (U F' U' F)</p></td></tr>
+  </table>
+</div>
+ <li class="hformat">Corner in top spot, edge in middle layer</li>
  <div class="centered">
-	<p><img src="images/f2l/f2l_case1.png" alt="case 1" class="caseimages" align="center" id="firstcaseimage"> (F' U' F)
-	<img src="images/f2l/f2l_case2.png" alt="case 2" class="caseimages" align="center"> (R U R')
-	<img src="images/f2l/f2l_case3.png" alt="case 3" class="caseimages" align="center"> (U' F' U F)
-	<img src="images/f2l/f2l_case4.png" alt="case 4" class="caseimages" align="center"> (U R U' R')</p>
+  <table>
+  <tr><td><img src="images/f2l/f2l_case11.png" alt="case 11" class="caseimages" id="firstcaseimage"></td><td><p>(R U R' U') (R U R' U') (R U R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case12.png" alt="case 12" class="caseimages" id="firstcaseimage"></td><td><p>(R U' R') (d R' U R)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case13.png" alt="case 13" class="caseimages" id="firstcaseimage"></td><td><p>(U F' U F) (U F' U2 F)</p></td></tr>
+  </table>
+  	
+  <table>
+  <tr><td><img src="images/f2l/f2l_case14.png" alt="case 14" class="caseimages" id="firstcaseimage"></td><td><p>(U F' U' F) (d' F U F')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case15.png" alt="case 15" class="caseimages" id="firstcaseimage"></td><td><p>(U' R U' R') (U' R U2 R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case16.png" alt="case 16" class="caseimages" id="firstcaseimage"></td><td><p>(U' R U R') (d R' U' R)</p></td></tr>
+  </table>
  </div>
 
- <h2>2: Corner in bottom spot, edge in top layer</h2>
-<p>Note the first two cases are simliar to the beginner's method: <!--(Sorry that these images aren't aligned on the webpage, I tried to align them for a while without success) --></p>
- <div class="centered">
-	<p><img src="images/f2l/f2l_case5.png" alt="case 5" class="caseimages" align="center" id="firstcaseimage"> (U R U' R') (U' F' U F)
-	<img src="images/f2l/f2l_case6.png" alt="case 6" class="caseimages" align="center"> (U' F' U F) (U R U' R')
-	<img src="images/f2l/f2l_case7.png" alt="case 7" class="caseimages" align="center"> (F' U F) (U' F' U F)</p>
- </div>
- <div class="centered">
-	<p><img src="images/f2l/f2l_case8.png" alt="case 8" class="caseimages" align="center" id="firstcaseimage"> (R U R') (U' R U R')
-	<img src="images/f2l/f2l_case9.png" alt="case 9" class="caseimages" align="center"> (R U' R') (U R U' R')
-	<img src="images/f2l/f2l_case10.png" alt="case 10" class="caseimages" align="center"> (F' U' F) (U F' U' F)</p>
- </div>
-	<!-- this part was the first section with more than 10 images and my head still hurts thinking about going through this again, also this page is really colourful and is not mobile friendly at all-->
- <h2>3: Corner in top spot, edge in middle layer</h2>
- <div class="centered">
-	<p><img src="images/f2l/f2l_case11.png" alt="case 11" class="caseimages" align="center" id="firstcaseimage"> (R U R' U') (R U R' U') (R U R')
-	<img src="images/f2l/f2l_case12.png" alt="case 12" class="caseimages" align="center"> (R U' R') (d R' U R)
-	<img src="images/f2l/f2l_case13.png" alt="case 13" class="caseimages" align="center"> (U F' U F) (U F' U2 F)</p>
- </div>
- <div class="centered">
-	<p><img src="images/f2l/f2l_case14.png" alt="case 14" class="caseimages" align="center" id="firstcaseimage"> (U F' U' F) (d' F U F')
-	<img src="images/f2l/f2l_case15.png" alt="case 15" class="caseimages" align="center"> (U' R U' R') (U' R U2 R')
-	<img src="images/f2l/f2l_case16.png" alt="case 16" class="caseimages" align="center"> (U' R U R') (d R' U' R)</p>
- </div>
-
- <h2>4: Corner pointing out, edge in top layer</h2>
- <div class="centered">
-	<p><img src="images/f2l/f2l_case17.png" alt="case 17" class="caseimages" align="center" id="firstcaseimage"> (R U' R' U) (d R' U' R)
-	<img src="images/f2l/f2l_case18.png" alt="case 18" class="caseimages" align="center"> (F' U F U') (d' F U F')
-	<img src="images/f2l/f2l_case19.png" alt="case 19" class="caseimages" align="center"> (U F' U2 F) (U F' U2 F)
-	<img src="images/f2l/f2l_case20.png" alt="case 20" class="caseimages" align="center"> (U' R U2 R') (U' R U2 R')</p>
- </div>
+ <li class="hformat">Corner pointing out, edge in top layer</li>
+ 
   <div class="centered">
-	<p><img src="images/f2l/f2l_case21.png" alt="case 21" class="caseimages" align="center" id="firstcaseimage"> (U F' U' F) (U F' U2 F)
-	<img src="images/f2l/f2l_case22.png" alt="case 22" class="caseimages" align="center"> (U' R U R') (U' R U2 R')
-	<img src="images/f2l/f2l_case23.png" alt="case 23" class="caseimages" align="center"> (U' R U' R' U) (R U R')
-	<img src="images/f2l/f2l_case24.png" alt="case 24" class="caseimages" align="center"> (U F' U F U') (F' U' F)</p>
- </div>
- <div class="centered">
-	<p><img src="images/f2l/f2l_case25.png" alt="case 25" class="caseimages" align="center" id="firstcaseimage"> (U' R U R' U) (R U R')
-	<img src="images/f2l/f2l_case26.png" alt="case 26" class="caseimages" align="center"> (U F' U' F U') (F' U' F)
-	<img src="images/f2l/f2l_case27.png" alt="case 27" class="caseimages" align="center"> (U F' U2 F U') (R U R')
-	<img src="images/f2l/f2l_case28.png" alt="case 28" class="caseimages" align="center"> (F' U' F) (U F' U' F)</p>
- </div>
-
-
- <h2>5: Corner pointing up, edge in top layer</h2>
- <div class="centered">
-	<p><img src="images/f2l/f2l_case29.png" alt="case 29" class="caseimages" align="center" id="firstcaseimage"> (R U R' U') U' (R U R' U') (R U R')
-	<img src="images/f2l/f2l_case30.png" alt="case 30" class="caseimages" align="center"> y' (R' U' R U) U (R' U' R U) (R' U' R)
-	<img src="images/f2l/f2l_case31.png" alt="case 31" class="caseimages" align="center"> (U2 R U R') (U R U' R')
-	<img src="images/f2l/f2l_case32.png" alt="case 32" class="caseimages" align="center"> (U2 F' U' F) (U' F' U F)</p>
- </div>
-  <div class="centered">
-	<p><img src="images/f2l/f2l_case33.png" alt="case 33" class="caseimages" align="center" id="firstcaseimage"> (U R U2 R') (U R U' R')
-	<img src="images/f2l/f2l_case34.png" alt="case 34" class="caseimages" align="center"> (U' F' U2 F) (U' F' U F)
-	<img src="images/f2l/f2l_case35.png" alt="case 35" class="caseimages" align="center"> (R U2 R') (U' R U R')
-	<img src="images/f2l/f2l_case36.png" alt="case 36" class="caseimages" align="center"> (F' U2 F) (U F' U' F)</p>
+  <table>
+  <tr><td><img src="images/f2l/f2l_case17.png" alt="case 11" class="caseimages" id="firstcaseimage"></td><td><p>(R U' R' U) (d R' U' R)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case18.png" alt="case 12" class="caseimages" id="firstcaseimage"></td><td><p>(F' U F U') (d' F U F')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case19.png" alt="case 13" class="caseimages" id="firstcaseimage"></td><td><p>(U F' U2 F) (U F' U2 F)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case20.png" alt="case 13" class="caseimages" id="firstcaseimage"></td><td><p>(U' R U2 R') (U' R U2 R')</p></td></tr>
+  </table>
+  	
+  <table>
+  <tr><td><img src="images/f2l/f2l_case21.png" alt="case 14" class="caseimages" id="firstcaseimage"></td><td><p>(U F' U' F) (U F' U2 F)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case22.png" alt="case 15" class="caseimages" id="firstcaseimage"></td><td><p>(U' R U R') (U' R U2 R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case23.png" alt="case 16" class="caseimages" id="firstcaseimage"></td><td><p>(U' R U' R' U) (R U R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case24.png" alt="case 13" class="caseimages" id="firstcaseimage"></td><td><p>(U F' U F U') (F' U' F)</p></td></tr>
+  </table>
+  
+  <table>
+  <tr><td><img src="images/f2l/f2l_case25.png" alt="case 14" class="caseimages" id="firstcaseimage"></td><td><p>(U' R U R' U) (R U R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case26.png" alt="case 15" class="caseimages" id="firstcaseimage"></td><td><p>(U F' U' F U') (F' U' F)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case27.png" alt="case 16" class="caseimages" id="firstcaseimage"></td><td><p>(U F' U2 F U') (R U R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case28.png" alt="case 13" class="caseimages" id="firstcaseimage"></td><td><p>(F' U' F) (U F' U' F)</p></td></tr>
+  </table>
  </div>
 
+ <li class="hformat">Corner pointing up, edge in top layer</li>
+   <div class="centered">
+  <table>
+  <tr><td><img src="images/f2l/f2l_case29.png" alt="case 29" class="caseimages" id="firstcaseimage"></td><td><p>(R U R' U') U' (R U R' U') (R U R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case30.png" alt="case 30" class="caseimages" id="firstcaseimage"></td><td><p>y' (R' U' R U) U (R' U' R U) (R' U' R)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case31.png" alt="case 31" class="caseimages" id="firstcaseimage"></td><td><p>(U2 R U R') (U R U' R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case32.png" alt="case 32" class="caseimages" id="firstcaseimage"></td><td><p>(U2 F' U' F) (U' F' U F)</p></td></tr>
+  </table>
+  	
+  <table>
+  <tr><td><img src="images/f2l/f2l_case33.png" alt="case 33" class="caseimages" id="firstcaseimage"></td><td><p>(U R U2 R') (U R U' R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case34.png" alt="case 34" class="caseimages" id="firstcaseimage"></td><td><p>(U' F' U2 F) (U' F' U F)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case35.png" alt="case 35" class="caseimages" id="firstcaseimage"></td><td><p>(R U2 R') (U' R U R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case36.png" alt="case 36" class="caseimages" id="firstcaseimage"></td><td><p>(F' U2 F) (U F' U' F)</p></td></tr>
+  </table>
+   </div>
 
- <h2>6: Corner in bottom spot, edge in middle layer</h2>
- <div class="centered">
-	<p><img src="images/f2l/f2l_case37.png" alt="case 37" class="caseimages" align="center" id="firstcaseimage"> (R U' R' d R' U2 R) (U R' U2 R)
-	<img src="images/f2l/f2l_case38.png" alt="case 38" class="caseimages" align="center"> (R U' R' U R U2 R') (U R U' R')
-	<img src="images/f2l/f2l_case39.png" alt="case 39" class="caseimages" align="center"> (R U' R' U' R U R') (U' R U2 R')</p>
- </div>
-  <div class="centered">
-	<p><img src="images/f2l/f2l_case40.png" alt="case 40" class="caseimages" align="center" id="firstcaseimage"> ((R U R' U' R U' R') (U d R' U' R)
-	<img src="images/f2l/f2l_case41.png" alt="case 41" class="caseimages" align="center"> (R U' R' d R' U' R) (U' R' U' R)</p>
- </div>
+ <li class="hformat">Corner in bottom spot, edge in middle layer</li>
+    <div class="centered">
+  <table>
+  <tr><td><img src="images/f2l/f2l_case37.png" alt="case 37" class="caseimages" id="firstcaseimage"></td><td><p>(R U' R' d R' U2 R) (U R' U2 R)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case38.png" alt="case 38" class="caseimages" id="firstcaseimage"></td><td><p>(R U' R' U R U2 R') (U R U' R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case39.png" alt="case 39" class="caseimages" id="firstcaseimage"></td><td><p>(R U' R' U' R U R') (U' R U2 R')</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case40.png" alt="case 40" class="caseimages" id="firstcaseimage"></td><td><p>(R U R' U' R U' R') (U d R' U' R)</p></td></tr>
+  <tr><td><img src="images/f2l/f2l_case41.png" alt="case 41" class="caseimages" id="firstcaseimage"></td><td><p>(R U' R' d R' U' R) (U' R' U' R)</p></td></tr>
+  </table>
+   </div>
+ </ol>
  
 <div class="forwardbackbutton">
 <a class="previous" href="method2-1.html" >&laquo; Previous: Cross</a>
 <a class="next" href="method2-3.html">Next Step: OLL &raquo;</a>
 </div>
-<hr>
- <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
- I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
 
+<footer>
+ <p class="smalltext">LOHS - Computer Science 10 Website. Every image on this site was created for the purpose of being on this website and is free to use.</p>
+</footer>
+
+</div>
 </body>
 
 </html>
