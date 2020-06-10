@@ -52,19 +52,20 @@
   </div>
 
 <!--PAGE CONTENT STARTS HERE-->
+<div id="container">
 <h1 id="firstelement">Beginner's Method-Step 6: Permute Corners</h1>
-<hr> <!-- Image name is actually PLL1 (one), not PLLL, even if it looks that way -->
+<hr> <!-- Image name is actually PLL1 (one), not PLLL, even if it looks that way on the default Geany font-->
 <img src="images/pll1.png" alt="image of finished oll" class="smallimages">
 <p>If you are on this step, you are probably noticing that you are almost done! To finish solving the Last Layer (TM), we just need to move the yellow pieces around,
-until they the colours on the side match up. Which would solve the cube.
+until they the colours on the side match up. Which would solve the cube. The purpose of the first step of 2-look PLL is to move the corners into the right positions.
 Some people may find PLL to be hard, as it involves comparing multiple colours simliar to when we were solving the second layer,
 but now is a lot less intuitive where each piece is going to go.</p>
 <p>You may be able to solve the first part of PLL by just looking at the 2 algorithms below and figuring it out, but most people have no idea what they are supposed to do on this step.
-The purpose of the first step of 2-look PLL is to move the corners into the right positions.
 Fortunately, there are only 3 possible ways for the yellow corners to be scrambled at this point. 
 2 corners will be diagonally swapped, or vertically/horizontally swapped, or the corners can be solved (In which case your cube would look like the image above).
 You can tell which position your cube is in by looking for the 'headlights', which is when 2 of the same colour point the same way. 
-One pair of headlights is a vertical swap algorithm, two headlights mean that the corners are solved already, and no headlights is a diagonal swap.</p>
+One pair of headlights is a vertical swap algorithm, two headlights mean that the corners are solved already, and no headlights is a diagonal swap.
+For the vertical swap, be sure that the headlights face the left.</p>
 <hr>
 
 <h2>Explaination:</h2>
@@ -73,7 +74,7 @@ If the corners are solved, don't do anything; if there are 'headlights', move th
  if there are no headlights, do the headlights algorithm anyways and that should create a pair of headlights.
  You move the headlights to the left because they are already solved, and we need to swap the right corners, which is what the headlights algorithm does.</p>
 <p>If you want to use the diagonal swap algorithm to save time, you do not need to align the pieces in a specific way for the algorithm to work, as you can always turn the top layer to align the pieces to their corrosponding side.
-Both corners can swap diagonally with the same results. Note that this isn't true of the 'headlights' case.</p>
+Both corners can swap diagonally with the same results.</p>
 <div class="centered">
   <img src="images/pll/example_1.png" alt="image of first case" class="exampleimages">
   <img src="images/pll/example_2.png" alt="image of second case" class="exampleimages">
@@ -86,22 +87,23 @@ Both corners can swap diagonally with the same results. Note that this isn't tru
 
 <h2>Algorithms:</h2>
 <div class="centered"> 
-	<p><img src="images/pll/headlights.png" alt="case 1" class="caseimageslarge" align="center" id="firstcaseimage"> (Headlights) R U R' U' R' F R2 U' R' U' R U R' F'
-	<img src="images/pll/diagonal.png" alt="case 2" class="caseimageslarge" align="center"> (Diagonal) F R U' R' U' R U R' F' R U R' U' R' F R F'</p>
+	<p><img src="images/pll/headlights.png" alt="case 1" class="caseimageslarge" align="center"> (Headlights) R U R' U' R' F R2 U' R' U' R U R' F'
+	<img src="images/pll/diagonal.png" alt="case 2" class="caseimageslarge" align="center" id="notintable"> (Diagonal) F R U' R' U' R U R' F' R U R' U' R' F R F'</p>
 </div>
 
 <div class="caption"	>
- <p>I believe that doing one algorithm over and over with random U layer turns in between will also solve this step eventually, due to the low number of possible positions.</p>
+ <p>Doing one algorithm over and over with random U layer turns in between will also solve this step eventually, due to the low number of possible cases.</p>
 </div>
    
 <div class="forwardbackbutton">
 <a class="previous" href="method1-5.html" >&laquo; Previous: Yellow Corners</a>
 <a class="next" href="method1-7.html">Next Step: Permute Last Layer Sides &raquo;</a>
 </div>
- <hr>
- <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
- I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+<footer>
+ <p class="smalltext">LOHS - Computer Science 10 Website. Every image on this site was created for the purpose of being on this website and is free to use.</p>
+</footer>
 
+</div>
 </body>
 
 </html>

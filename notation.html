@@ -52,7 +52,7 @@
   
 
 <!-- PAGE CONTENT STARTS HERE -->
-
+<div id="container">
 <h1 id="firstelement">Rubik's Cube Notation:</h1>
 <hr>
 <p>To easily describe the moves on a Rubik's cube, we use a letter as notation; which corrosponds a perticular move relative to the orientation of the cube (usually last layer facing up unless otherwise specified). 
@@ -61,39 +61,40 @@ Some letters can also represent the action of turning the entire cube, or multip
 (i.e. <b>R</b> is a 90 degree clockwise turn of the right face, while <b>U'</b> is a 90 degree counter-clockwise turn.)
 When getting used to Rubik's cube notation, make sure that you are not mixing up the direction of clockwise and counter-clockwise on each face, as opposite faces will have clockwise be in opposite directions.
 Failing to pay attention to the direction of the turn may lead to messing up your progress while learning a new algorithm.
-A letter followed by a <b>2"</b> (i.e. <b>F2</b>) is a 180 degree turn. There are no 270 degree turns in algorithms as a they are just a reverse 90 degree turn.
- Notice that both counter-clockwise and clockwise 180 degree turns lead to the same position; however, an algorithm may specify a move such as <b>L2'</b> over <b>L2</b> to indicate the best direction to turn in.</p>
+A letter followed by a <b>2"</b> (i.e. <b>F2</b>) is a 180 degree turn. There are 270 degree turns are just a reverse 90 degree turn.
+ Both counter-clockwise and clockwise 180 degree turns lead to the same position; however, an algorithm may specify a move such as <b>L2'</b> over <b>L2</b> to indicate the best direction to turn in.</p>
 <hr>
 
 <h2>Basic Notation:</h2>
-<p>As there are 6 faces on a cube, each face of a Rubik's cube has a coresponding letter signaling a turn of that face. 
-These faces are easy to locate when you hold the cube with the centers in the same position that a algorithm pictures show. The six faces are notated as:</p>
+<p>As there are 6 faces on a cube, each face of a Rubik's cube has a coresponding letter meaning a turn of that face. 
+These faces are realitive to how you hold the Rubik's Cube. When doing algorithms, you must hold the cube with the centers in the same position that the algorithm pictures show. 
+The six faces are notated as:</p>
   <div class="centered">
-	<p><img src="images/notation/up.png" alt="up" class="caseimages" align="center" id="firstcaseimage"> <b>U</b> (Up) is the side facing up.
-	<img src="images/notation/down.png" alt="down" class="caseimages" align="center"> <b>D</b> (Down) is the side facing the table/floor.
-	<img src="images/notation/left.png" alt="left" class="caseimages" align="center"> <b>L</b> (Left) is the side facing your left.</p>
+	<p><img src="images/notation/up.png" alt="up" class="caseimages" align="center"> <b>U</b> (Up) is the side facing up.
+	<img src="images/notation/down.png" alt="down" class="caseimages" align="center" id="notintable"> <b>D</b> (Down) is the side facing the table/floor.
+	<img src="images/notation/left.png" alt="left" class="caseimages" align="center" id="notintable"> <b>L</b> (Left) is the side facing your left.</p>
  </div>
   <div class="centered">
-	<p><img src="images/notation/right.png" alt="right" class="caseimages" align="center" id="firstcaseimage"> <b>R</b> (Right) is the side facing your right.
-	<img src="images/notation/front.png" alt="front" class="caseimages" align="center"> <b>F</b> (Front) is the side facing towards you.
-	<img src="images/notation/back.png" alt="back" class="caseimages" align="center"> <b>B</b> (Back) is the side facing away from you.</p>
+	<p><img src="images/notation/right.png" alt="right" class="caseimages" align="center"> <b>R</b> (Right) is the side facing your right.
+	<img src="images/notation/front.png" alt="front" class="caseimages" align="center" id="notintable"> <b>F</b> (Front) is the side facing towards you.
+	<img src="images/notation/back.png" alt="back" class="caseimages" align="center" id="notintable"> <b>B</b> (Back) is the side facing away from you.</p>
  </div>
  <hr>
 <h2> Multi-Layer Turns:</h2>
-<p><i>(Note that after this line, we will be discussing western styles of notation, as complex move notation can differ internationally)</i></p> 
-<p> For each basic turn, there is also a multi-layer turn of the same face. A multi-layer turn (TM), is a turn of both the side and the center slice nearest to it at the same time.
+<p><i>(This (and everything after) is refering to western notation, as notation can differ internationally)</i></p> 
+<p> For each basic turn, there is also a multi-layer turn of the same face. A multi-layer turn, is a turn of both the side and the center slice nearest to it at the same time.
 Multi-layer turns are denoted by lowercase letters. On larger cubes with more layers, there may also be a number before the letter to notate the number of layers, but this is not relevant to the 3x3.
 Since center pieces cannot move relative to the rest of the centers, this move can to thought of as rotating the cube and turning the opposite side at the same time.
 Multi-layer turns are not nesscarry for the purpose of the Beginner's method, but can help with speeding up some algorithms on more complex and faster solving algorithms: </p>
   <div class="centered">
-	<p><img src="images/notation/up2.png" alt="up2" class="caseimages" align="center" id="firstcaseimage"> <b>u</b> (sometimes <b>Uw</b>) are these 2 sides.
-	<img src="images/notation/down2.png" alt="down2" class="caseimages" align="center"> <b>d</b> (sometimes <b>Dw</b>) are these 2 sides.
-	<img src="images/notation/left2.png" alt="left2" class="caseimages" align="center"> <b>l</b> (sometimes <b>Lw</b>) are these 2 sides.</p>
+	<p><img src="images/notation/up2.png" alt="up2" class="caseimages" align="center"> <b>u</b> is the top and center layers.
+	<img src="images/notation/down2.png" alt="down2" class="caseimages" align="center"  id="notintable"> <b>d</b> is the bottom and center layers.
+	<img src="images/notation/left2.png" alt="left2" class="caseimages" align="center" id="notintable"> <b>l</b> is the left and center layers.</p>
  </div>
   <div class="centered">
-	<p><img src="images/notation/right2.png" alt="right2" class="caseimages" align="center" id="firstcaseimage"> <b>r</b> (sometimes <b>Rw</b>) are these 2 sides.
-	<img src="images/notation/front2.png" alt="front2" class="caseimages" align="center"> <b>f</b> (sometimes <b>Fw</b>) are these 2 sides.
-	<img src="images/notation/back2.png" alt="back2" class="caseimages" align="center"> <b>b</b> (sometimes <b>Bw</b>) are these 2 sides.</p>
+	<p><img src="images/notation/right2.png" alt="right2" class="caseimages" align="center"> <b>r</b> is the right and center layers.
+	<img src="images/notation/front2.png" alt="front2" class="caseimages" align="center" id="notintable"> <b>f</b> is the front and center layers.
+	<img src="images/notation/back2.png" alt="back2" class="caseimages" align="center" id="notintable"> <b>b</b> is the back and center layers.</p>
  </div>
  <hr>
  <h2>Slice Turns:</h2>
@@ -101,9 +102,9 @@ Multi-layer turns are not nesscarry for the purpose of the Beginner's method, bu
  These turns can also be modified with a '2' or apostrophe.
  The 3 different slice turns are as follows:</p>
    <div class="centered">
-	<p><img src="images/notation/middle.png" alt="middle" class="caseimages" align="center" id="firstcaseimage"> <b>M</b> (Middle), in the same direction as <b>L</b>.
-	<img src="images/notation/equatorial.png" alt="equatorial" class="caseimages" align="center"> <b>E</b> (Equatorial), in the same direction as <b>D</b>.
-	<img src="images/notation/standing.png" alt="standing" class="caseimages" align="center"> <b>S</b> (Standing), in the same direction as <b>F</b>.
+	<p><img src="images/notation/middle.png" alt="middle" class="caseimages" align="center"> <b>M</b> (Middle), in the same direction as <b>L</b>.
+	<img src="images/notation/equatorial.png" alt="equatorial" class="caseimages" align="center" id="notintable"> <b>E</b> (Equatorial), in the same direction as <b>D</b>.
+	<img src="images/notation/standing.png" alt="standing" class="caseimages" align="center" id="notintable"> <b>S</b> (Standing), in the same direction as <b>F</b>.
  </div>
  <hr>
  <h2>Cube Rotations:</h2>
@@ -111,6 +112,9 @@ Multi-layer turns are not nesscarry for the purpose of the Beginner's method, bu
  Any position can be solved without these moves, but you will often see them in algorithms as they can allow an algorithm to be more easily executed.
  Sometimes the cube rotation will be put into square brackets; however, in some types of notation, you may also see a basic move put into brackets. 
  In this case, instead of doing the normal move, rotate the entire cube in the notated direction. </p>
+ <p>If you see a 'y' move at the start of an algorithm, you should recognize and start the algorithm with the cube already in the position after rotating,
+ instead of regonizing the case and then rotating the cube. This is because I probably choose a different algorithm for the case after I made the image of the case, 
+ which may require a different orientation. Due lack of time, it is much more logical for me to add a letter to an algorithm instead of finding fifty images and rotating them.</p>
  <p>Due to the nature of every piece other than 2 centers moving in a rotation, these moves cannot be easily shown highlighting every piece on the cube.
  The 3 possible cube rotations, which can also be modified with an <b>'</b> / <b>2</b> like a basic turn, are:</p>
 <ul>
@@ -124,10 +128,11 @@ Multi-layer turns are not nesscarry for the purpose of the Beginner's method, bu
 <a class="next" href="method1.html" style="margin-right: 90px; float: none;">Beginner's method guide</a>
 <a class="next" href="method2.html" style="margin-right: 100px; float: none;">CFOP method guide</a>
 </div>
-<hr>
- <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
- I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+<footer>
+ <p class="smalltext">LOHS - Computer Science 10 Website. Every image on this site was created for the purpose of being on this website and is free to use.</p>
+</footer>
 
+</div>
 </body>
 
 </html>

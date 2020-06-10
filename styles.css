@@ -107,14 +107,17 @@
 .btn-group button:hover {
   background-color: #4c5b61;
 }
-/* Scrollbar (very sorry if you don't have a scroll wheel), you can still scroll by dragging the rightmost pixel of the scroll bar*/
+/* Scrollbar (very sorry if you don't have a scroll wheel)*/
 ::-webkit-scrollbar {
   width: 1px;
   height: 10px; 	/* as the website retains 1920 px width when resized, there will be a scroll bar on different screens for the width*/
 }
+::-webkit-scrollbar-thumb {
+  background: #9dacb2;
+}
 /* The progress bar */
 .progress-container {
-  width: 14px;
+  width: 15px;
   top: 0;
   right: 0;
   height: 100%;
@@ -124,7 +127,7 @@
 }
 .progress-bar {
   height: 0%;
-  width: 14px;
+  width: 15px;
   top: 0;
   position: fixed;
   background: #C6C6C6;
@@ -210,40 +213,25 @@ a {
   width: 100px;
   height: auto;
   margin: 10px;
-  margin-left: 90px;
+  margin-left: 0px;
   display: inline;
 }
 .caseimageslarge { /*larger images for some less crowded pages*/
   width: 180px;
   height: auto;
   margin: 10px;
-  margin-left: 90px;
   display: inline;
 }
-/*Fine tuning of image position, this was before I added tables, and all my image tags will pretty much have this by now, ideally, I would change it so that this would make a image have a margin instead of no margin*/
-#firstcaseimage {
- margin-left: 0px;
-}
-#left {
-  width: 45%;
-  float:left;
-  margin-right: 0px;
-  height: 120px;
-}
-#left p{
-  margin-right: 0px;
-}
-#right {
-  width: 55%;
-  float:left;
-  height: 120px;
+
+#notintable { /*images next to each other or 'not in a table' need to be spaced out, this doesn't apply to the first image in a row of images though*/
+ margin-left: 90px;
 }
 #firstelement {  /*First element on page needs to have a larger top margin*/
   margin-top: 100px;
 }
 
 
-.forwardbackbutton a {
+.forwardbackbutton a { /*styles for back and fowards buttons*/
   font-size: 16px;
   font-family: verdana;
   color: white;
@@ -279,11 +267,14 @@ a {
   margin-left:0px;
   margin-right: 25px;
  }
-#20pxmargintop {
+#twentypxmargintop {
   margin-top: 20px
 }
+#hundredpxmargintop {  /*I am not going to bother making more specific margin ids because the naming gets too tedious*/
+  margin-top: 100px
+}
 
-footer {
+footer {  
   text-align: center;
   padding: 3px;
   background-color: #9dacb2	;
@@ -294,16 +285,24 @@ footer {
 .smalltext {
   font-size: 12px;
 }
-
+.algorithm { /*these are the blocks in a table with algorithms and should be longer, they are a fixed size so tables will line up*/
+  width: 320px;
+}
+.wide .algorithm { /*these are for the algorithm sets that are too wide for the last width*/
+  width: 465px;
+}
 .centered td{
   border: 1px solid #4c5b61	;
   padding: 8px;
 }
-.centered tr:nth-child(even){background-color: #f7f7f7;}
+.centered tr:nth-child(even){ /*different colour altneration; it looks really cool*/
+  background-color: #f7f7f7;
+}
 
-.centered table {
+.centered table {  /*table with collapsed borders, and very specific margins that is inline*/
   font-size: 16px;
   border-collapse: collapse;
-  margin: 50px;
-  display: inline;
+  margin: 0px 50px 60px 50px;
+  display: inline-table;
 }
+

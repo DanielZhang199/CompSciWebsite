@@ -50,78 +50,81 @@
 </div>
 
 <!-- PAGE CONTENT STARTS HERE -->
+<div id="container">
 <h1 id="firstelement">CFOP Method-Step 4: Permute Last Layer (PLL)</h1> 
 <hr>
 <img src="images/solved.png" alt="image of finished PLL" class="smallimages">
 <p>The last step of the CFOP/Fridrich method is to permute the last layer (PLL).
-Full PLL solves the top face in 1 step, with 21 algorithms/different swaps.</p>
-<p>Full PLL should be the easiest step to learn after beginner's method, as there are the least number of algorithms to memorize for this step.
-That being said, PLL should be the first part of this guide to learn, as anyone that is able to memorize beginner's method should be able to memorize PLL.</p>
+One look PLL solves the top face in 1 step, with 21 algorithms/different swaps.
+PLL should be the easiest step to learn after beginner's method, as there are the least number of algorithms to memorize for this step, and many of the algorithms are all very simliar.
+PLL should be the first step of this guide to learn (although I probably should have written that earlier), as anyone that is able to complete the Beginner's Method should be able to memorize PLL.</p>
 <p>You should already know 6 PLL algorithms from 2-look PLL, and the rest of the algorithms are all variation of each other (as you can't do much without messing up the cube at this point)
-As this is likely the first step of CFOP that many memorize, I would recommend starting slow with learning 2-4 algorithms each day, and practicing learned algorithms every day on a solved cube.</p>
-<p>Each of the possible PLL swaps have a name, describing the shape of the swap (i.e. T-Swap swaps corners and eddges in a 'T' shape)
-Not all cubes can quickly do <b>M</b> moves, so there will be an altnerative algorithm for algorithms that contain <b>M</b> moves.
-PLL will take a lot of practice outside of memorizing algorithms, as you will need to know which way the colours of the sides should be arranged.
-This page will list and name each of the different PLL algorithms:</p>
+As this is likely the first step of CFOP that many memorize, it's probably best to start slow, learning 2-4 algorithms each day, and practicing already learned algorithms.</p>
+<p>Each of the possible PLL swaps have a name, describing the shape of the swap (although they don't really all resemble their letter).
+PLL will take a bit of practice outside of memorizing algorithms, as you will need to know which way the colours of the sides should be arranged.
+Recognition of PLL cases can be done by only looking at 2 faces, but is probably easier no remember the patterns on 3 faces.
+Unfortunately, the images here don't show the patterns on the sides on them, so you may need to make some drawings to remember the positions.</p>
 <hr>
 <h2>Edges Only:</h2>
-<p>This is also the 2nd part of 2-look PLL.</p>
- <div>
-	<p><img src="images/pll/case1.png" alt="case 1" class="caseimages" align="center" id="firstcaseimage"> H-Perm: M2' U M2' U2 M2' U M2'|R2' U2 R' U2 R2' U2' R2' U2 R' U2 R2'
-	<img src="images/pll/case4.png" alt="case 4" class="caseimages" align="center"> Z-Perm: M2 U M2 U M U2 M2 U2 M U2|R U R' U R' U' R' U R U' R' U' R2 U R U2</p>
- </div>
-  <div>
-	<p><img src="images/pll/case2.png" alt="case 2" class="caseimages" align="center" id="firstcaseimage"> U-Perm (a): R U' R U R U R U' R' U' R2
-	<img src="images/pll/case3.png" alt="case 3" class="caseimages" align="center"> U-Perm (b): L' U L' U' L' U' L' U L U L2|R' U R' U' R' U' R' U R U R2 (depending on hand preference)</p>
+<p>This is also the 2nd part of 2-look PLL. As these are widely considered the best PLLs, and COLL and 2-look PLL will always end up in these cases, there are a lot a different ways to do these permutations.
+If you find the single <b>M</b> move hard to do quickly on Z-perm, start with a  <b>y</b> move and then replace the <b>M</b> moves with <b>M'</b> moves.</p>
+ <div class="centered"> <!--Made an image naming mistake here-->
+  <table>
+  <tr><td><img src="images/pll/case2.png" alt="case 1" class="caseimages"></td><td class="algorithm"><p>U-Perm (a): R U' R U R U R U' R' U' R2</p></td></tr>
+  <tr><td><img src="images/pll/case3.png" alt="case 2" class="caseimages"></td><td class="algorithm"><p>U-Perm (b): R' U R' U' R' U' R' U R U R2</p></td></tr>
+  </table>
+  <table>
+  <tr><td><img src="images/pll/case1.png" alt="case 3" class="caseimages"></td><td class="algorithm"><p> H-Perm: M2' U M2' U2 M2' U M2'</p></td></tr>
+  <tr><td><img src="images/pll/case4.png" alt="case 4" class="caseimages"></td><td class="algorithm"><p>Z-Perm: M2 U M2 U M U2 M2 U2 M U2</p></td></tr>
+  </table>
  </div>
 
  
 <h2>Corners Only:</h2>
-  <div>
-	<p><img src="images/pll/case5.png" alt="case 5" class="caseimages" align="center" id="firstcaseimage"> A-Perm (a): x L2 D2 L' U' L D2 L' U L'
-	<img src="images/pll/case6.png" alt="case 6" class="caseimages" align="center"> A-Perm (b): x' L2 D2 L U L' D2 L U' L
-	<img src="images/pll/case7.png" alt="case 7" class="caseimages" align="center"> E-Perm: x' L' U L D' L' U' L D L' U' L D' L' U L D</p>
+<div class="centered"> <!--Made an image naming mistake here-->
+ <table>
+  <tr><td><img src="images/pll/case5.png" alt="case 5" class="caseimages"></td><td class="algorithm"><p> A-Perm (a): x L2 D2 L' U' L D2 L' U L'</p></td></tr>
+  <tr><td><img src="images/pll/case6.png" alt="case 6" class="caseimages"></td><td class="algorithm"><p>A-Perm (b): x' L2 D2 L U L' D2 L U' L</p></td></tr>
+  </table>
+  <table>
+  <tr><td><img src="images/pll/case7.png" alt="case 7" class="caseimages"></td><td class="algorithm"><p>E-Perm: x' L' U L D' L' U' L D L' U' L D' L' U L D</p></td></tr>
+  </table>
  </div>
  
 <h2>Edges and Corners:</h2>
-<p>While the G-perm looks complicated, you can tell which G-perm you have by pointing the 2 corner colours that match to the left.</p> <!--I was able to align these images-->
- <div>
-	<div id="left"><p><img src="images/pll/caseF.png" alt="case 8" class="caseimages" align="center" id="firstcaseimage"> F-Perm: R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R</p></div>
-	<div id="right"><p><img src="images/pll/caseT.png" alt="case 17" class="caseimages" align="center" id='firstcaseimage'> T-Perm: R U R' U' R' F R2 U' R' U' R U R' F'</p></div>
- </div>
-  <div>
-	<div id="left"><p><img src="images/pll/caseGa.png" alt="case 9" class="caseimages" align="center" id="firstcaseimage"> G-Perm (a): R2 U R' U R' U' R U' R2 U' D R' U R D'</p></div>
-	<div id="right"><p><img src="images/pll/caseGb.png" alt="case 10" class="caseimages" align="center" id='firstcaseimage'> G-Perm (b): R' U' R U D' R2 U R' U R U' R U' R2 D</p></div>
- </div>
-  <div>
-	<div id="left"><p><img src="images/pll/caseGc.png" alt="case 11" class="caseimages" align="center" id="firstcaseimage"> G-Perm (c): R2 U' R U' R U R' U R2 U D' R U' R' D</p></div>
-	<div id="right"><p><img src="images/pll/caseGd.png" alt="case 12" class="caseimages" align="center" id='firstcaseimage'> G-Perm (d): R U R' U' D R2 U' R U' R' U R' U R2 D'</p></div>
- </div>
-  <div>
-	<div id="left"><p><img src="images/pll/caseJa.png" alt="case 13" class="caseimages" align="center" id="firstcaseimage"> J-Perm (a): x R2 F R F' R U2 r' U r U2</p></div>
-	<div id="right"><p><img src="images/pll/caseJb.png" alt="case 14" class="caseimages" align="center" id='firstcaseimage'> J-Perm (b): R U R' F' R U R' U' R' F R2 U' R'</p></div>
- </div>
-   <div>
-	<div id="left"><p><img src="images/pll/caseRa.png" alt="case 15" class="caseimages" align="center" id="firstcaseimage"> R-Perm (a): R U' R' U' R U R D R' U' R D' R' U2 R'</p></div>
-	<div id="right"><p><img src="images/pll/caseRb.png" alt="case 16" class="caseimages" align="center" id='firstcaseimage'> R-Perm (b): R2 F R U R U' R' F' R U2 R' U2 R</p></div>
- </div>
-   <div>
-	<div id="left"><p><img src="images/pll/caseNa.png" alt="case 18" class="caseimages" align="center" id="firstcaseimage"> N-Perm (a): R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'</p></div>
-	<div id="right"><p><img src="images/pll/caseNb.png" alt="case 19" class="caseimages" align="center" id='firstcaseimage'> N-Perm (b): R' U R U' R' F' U' F R U R' F R' F' R U' R</p></div>
- </div>
-  <div > 
-	<div id="left"><p><img src="images/pll/caseV.png" alt="case 20" class="caseimages" align="center" id="firstcaseimage"> V-Perm: R' U R' U' y R' F' R2 U' R' U R' F R F</p></div>
-	<div id="right"><p><img src="images/pll/caseY.png" alt="case 21" class="caseimages" align="center" id='firstcaseimage'> Y-Perm: F R U' R' U' R U R' F' R U R' U' R' F R F'</p></div>
- </div>
- 
-<div class="forwardbackbutton" style="margin-top:890px;"><!--This one needs a large margin as the images are floating above (not good design, but I just wanted side by side images)-->
+<p>While the G-perm looks complicated, you can tell which G-perm you have by pointing the 2 corner colours that match to the left, and looking at the solved 'block'. 
+Which are the 2 squares the arrows are not touching. The other cases should be fairly easy to recognize, but it helps to look at the corner patterns first.
+</p>
+ <div class="centered"> 
+  <table class="wide">
+  <tr><td><img src="images/pll/caseF.png" alt="case 8" class="caseimages"></td><td class="algorithm"><p>F-Perm: R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R</p></td></tr>
+  <tr><td><img src="images/pll/caseGa.png" alt="case 9" class="caseimages"></td><td class="algorithm"><p>G-Perm (a): R2 U R' U R' U' R U' R2 U' D R' U R D'</p></td></tr>
+  <tr><td><img src="images/pll/caseGc.png" alt="case 10" class="caseimages"></td><td class="algorithm"><p>G-Perm (c): R2 U' R U' R U R' U R2 U D' R U' R' D</p></td></tr>
+  <tr><td><img src="images/pll/caseJa.png" alt="case 11" class="caseimages"></td><td class="algorithm"><p> J-Perm (a): x R2 F R F' R U2 r' U r U2</p></td></tr>
+  <tr><td><img src="images/pll/caseRa.png" alt="case 12" class="caseimages"></td><td class="algorithm"><p>R-Perm (a): R U' R' U' R U R D R' U' R D' R' U2 R</p></td></tr>  
+  <tr><td><img src="images/pll/caseNa.png" alt="case 13" class="caseimages"></td><td class="algorithm"><p> N-Perm (a): R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'</p></td></tr>
+  <tr><td><img src="images/pll/caseV.png" alt="case 14" class="caseimages"></td><td class="algorithm"><p> V-Perm: R' U R' U' y R' F' R2 U' R' U R' F R F</p></td></tr>
+  </table>
+  	
+  <table class="wide">
+  <tr><td><img src="images/pll/caseT.png" alt="case 15" class="caseimages"></td><td class="algorithm"><p>T-Perm: R U R' U' R' F R2 U' R' U' R U R' F'</p></td></tr>
+  <tr><td><img src="images/pll/caseGb.png" alt="case 16" class="caseimages"></td><td class="algorithm"><p>G-Perm (b): R' U' R U D' R2 U R' U R U' R U' R2 D</p></td></tr>
+  <tr><td><img src="images/pll/caseGd.png" alt="case 17" class="caseimages"></td><td class="algorithm"><p>G-Perm (d): R U R' U' D R2 U' R U' R' U R' U R2 D'</p></td></tr>
+  <tr><td><img src="images/pll/caseJb.png" alt="case 18" class="caseimages"></td><td class="algorithm"><p>J-Perm (b): R U R' F' R U R' U' R' F R2 U' R'</p></td></tr>
+  <tr><td><img src="images/pll/caseRb.png" alt="case 19" class="caseimages"></td><td class="algorithm"><p>R-Perm (b): R2 F R U R U' R' F' R U2 R' U2 R</p></td></tr>
+  <tr><td><img src="images/pll/caseNb.png" alt="case 20" class="caseimages"></td><td class="algorithm"><p>N-Perm (b): R' U R U' R' F' U' F R U R' F R' F' R U' R</p></td></tr>
+  <tr><td><img src="images/pll/caseY.png" alt="case 21" class="caseimages"></td><td class="algorithm"><p>Y-Perm: F R U' R' U' R U R' F' R U R' U' R' F R F'</p></td></tr>
+  </table>
+   </div>
+<div class="forwardbackbutton">
 <a class="previous" href="method2-3.html" >&laquo; Previous: OLL</a>
 <a class="next" href="method2.html">Finish &raquo;</a>
 </div>
-<hr>
- <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
- I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+<footer>
+ <p class="smalltext">LOHS - Computer Science 10 Website. Every image on this site was created for the purpose of being on this website and is free to use.</p>
+</footer>
 
+</div>
 </body>
 
 </html>

@@ -52,27 +52,29 @@
   </div>
 
 <!--PAGE CONTENT STARTS HERE-->
+<div id="container">
 <h1 id="firstelement">Beginner's Method-Step 7: Permute Edges</h1>
 <hr>
 <img src="images/pll2.png" alt="image of solved cube" class="smallimages">
-<p>By this step, your Rubik's Cube should look almost completely solved, however the yellow edge pieces are still in the wrong position and don't line up with the corners and centers.
+<p>By this step, your Rubik's Cube should look almost solved, but the yellow edge pieces are still in the wrong position and don't line up with the corners and centers. 
+(If it is already solved, which is a 1/12 chance, good for you).
 For this step, we will be moving the yellow edge pieces to match the colours of each of the side center pieces, which will solve the entire cube.
 This step is the least intuitive to grasp, but all you need to know is that using the algoritms shown below will lead to the edge pieces swapping as indicated by the arrows.
-There are 4 different algorithms for this step, but you can solve the any of the cases knowing any amount of algorithms.</p>
+There are 4 different algorithms for this step, but you can solve the any of the cases knowing any amount of algorithms, but generally knowing more algorithms make your solve faster with diminishing returns.</p>
 <p>To use the algorithms for this step, make sure you first align the corners to that the colours on the corners match the rest of the sides, as shown at the end of corner PLL.
 There will be either 3 or 4 edges that are in the wrong position, which you can tell by the 'headlights' on that side, as a edge in the right place will just be a solved line without headlights.
 If there are 3 edges in the wrong position, hold the cube so that the center headlights are facing you, and the back is the solved edge piece. 
 Then, note the colour of the edge piece and figure out which side it needs to move to.
 If the edge piece needs swap with the left, use the left-handed U permutation, and vice versa for right.</p>
 <p>If there are 4 edges that need to be solve (no solved edges), then note if the edges are swapped striaght across, or diagonally.
-Then use the appropriate algorithms to solve the cube (it will work no matter which side is facing fowards).</p>
+Make sure that for Z-perm the edges are going to swap in the right position by turning the top layer, then use the appropriate algorithms to solve the cube.</p>
 <p>If you don't want to learn all 4 algorithms, you can also only learn the first algorithm, which is the counter-clockwise (right-handed) U-perm. 
 In order to do this, all you need to do is to always hold the cube so the center headlights face towards you before using the algorithm.
 If there are 4 headlights (no center one) you can use the algorithm on any side.</p>
 <hr>
 <h2>Examples of each case:</h2>
 <p>In order, these are examples of case where you should use the: Right U-Perm, Left U-Perm, H-Perm (Straight Swap), and Z-Perm (Diagonal Swap).
-The back side is already solved in the first 2 cases, but not in the last 2 cases.</p>
+The back side is already solved in the first 2 examples, but not in the last 2 cases.</p>
 <div class="centered">
   <img src="images/pll/example_5.png" alt="image of first case" class="exampleimages">
   <img src="images/pll/example_6.png" alt="image of second case" class="exampleimages">
@@ -80,19 +82,21 @@ The back side is already solved in the first 2 cases, but not in the last 2 case
   <img src="images/pll/example_8.png" alt="image of fourth case" class="exampleimages">
 </div> 
 
-<h2>Algorithms:</h2> <!--I did not number these images right when I made them, and the elements are floating so there needs to be a large margin between the divs, as the class style did not account for large images-->
- <div>
-	<div id="left"><p><img src="images/pll/case2.png" alt="case 1" class="caseimageslarge" align="center"> U-Perm (right): R U' R U R U R U' R' U' R2</p></div>
-	<div id="right"><p><img src="images/pll/case3.png" alt="case 2" class="caseimageslarge" align="center"> U-Perm (left): L' U L' U' L' U' L' U L U L2</p></div>
- </div style="margin-bottom: 300px;"> 
- <div style="margin-top:300px; padding-bottom: 300px">
-	<div id="left"><p><img src="images/pll/case1.png" alt="case 3" class="caseimageslarge" align="center"> H-Perm: R2' U2 R' U2 R2' U2' R2' U2 R' U2 R2'</p></div>
-	<div id="right"><p><img src="images/pll/case4.png" alt="case 4" class="caseimageslarge" align="center"> Z-Perm: R U R' U R' U' R' U R U' R' U' R2 U R U2</p></div>
- </div>
+<h2>Algorithms:</h2> <!--These images are copy pasted from method2-4.html-->
+<div class="centered">
+  <table>
+  <tr><td><img src="images/pll/case2.png" alt="case 1" class="caseimageslarge"></td><td class="algorithm"><p>U-Perm (a): R U' R U R U R U' R' U' R2</p></td></tr>
+  <tr><td><img src="images/pll/case3.png" alt="case 2" class="caseimageslarge"></td><td class="algorithm"><p>U-Perm (b): R' U R' U' R' U' R' U R U R2</p></td></tr>
+  </table>
+  <table>
+  <tr><td><img src="images/pll/case1.png" alt="case 3" class="caseimageslarge"></td><td class="algorithm"><p> H-Perm: M2' U M2' U2 M2' U M2'</p></td></tr>
+  <tr><td><img src="images/pll/case4.png" alt="case 4" class="caseimageslarge"></td><td class="algorithm"><p>Z-Perm: M2 U M2 U M U2 M2 U2 M U2</p></td></tr>
+  </table>
+  </div>
 <hr>
 <img src="images/pll2.png" alt="image of solved cube" class="smallimages" style="float:left">
 <img src="images/pll2.png" alt="image of solved cube" class="smallimages" style="float:right">
-<div style="margin-bottom:50px;">
+<div id="hundredpxmargintop">
 <h2>Congratulations!</h2>
 <p>You have solved the Rubik's Cube!</p>
 </div>
@@ -100,10 +104,11 @@ The back side is already solved in the first 2 cases, but not in the last 2 case
 <a class="previous" href="method1-6.html" >&laquo; Previous: Permute Last Layer Corners</a>
 <a class="next" href="method1.html">Finish &raquo;</a>
 </div>
- <hr>
- <p class="smalltext">I created the images along with everything else on this page myself, so everything on this webpage is definitely copyright free and free to use. 
- I am adding this to the bottom of every page to show off the fixed position navigation bar on shorter pages, and it also makes the website look more professional.</p>
+<footer>
+ <p class="smalltext">LOHS - Computer Science 10 Website. Every image on this site was created for the purpose of being on this website and is free to use.</p>
+</footer>
 
+</div>
 </body>
 
 </html>
